@@ -117,6 +117,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -232,6 +233,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="446" y="123" key="#Notifications" timestamp="1582287995253">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="446" y="123" key="#Notifications/0.0.1707.920@0.0.1707.920" timestamp="1582287995253" />
     <state x="446" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582269768545">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -240,6 +245,10 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="682" y="339" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1707.920@0.0.1707.920" timestamp="1582287882938" />
+    <state x="441" y="62" key="CommitChangelistDialog2" timestamp="1582287969362">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="441" y="62" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1582287969362" />
     <state width="1663" height="425" key="GridCell.Tab.0.bottom" timestamp="1582287260665">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -260,6 +269,10 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="232" y="0" width="1475" height="842" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1582287884825" />
+    <state x="446" y="198" key="Vcs.Push.Dialog.v2" timestamp="1582287973740">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="446" y="198" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1582287973740" />
     <state x="687" y="174" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1582223434664">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
