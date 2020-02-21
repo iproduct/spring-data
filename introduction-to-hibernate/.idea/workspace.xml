@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0cc464bc-8dc6-4a97-9d59-13d731b1bdff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07aa115e-b683-4055-8d8b-39bdcd29a24f.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07aa115e-b683-4055-8d8b-39bdcd29a24f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/613c024a-d5de-47f5-9b41-7cf2af402175.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/613c024a-d5de-47f5-9b41-7cf2af402175/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/71f6c435-b220-4aa1-8047-d3e6342117be.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/71f6c435-b220-4aa1-8047-d3e6342117be/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/introduction-to-hibernate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/hibernate/HibernateDemoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/hibernate/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/student.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/JdbcIntro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/sql/soft_uni_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/introduction-to-jpa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/introduction-to-jpa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/src/main/java/demos/hibernate/JpaDemoMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/src/main/java/demos/hibernate/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="school: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="D:/CourseGO/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y51gEsMMSq2CmSHJxjgDFYbtaU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.23772103" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CourseSpringData\workspace\introduction-to-hibernate\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CourseSpringData\workspace\introduction-to-hibernate\src\main\resources" />
+      <recent name="D:\CourseSpringData\workspace\introduction-to-hibernate" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HibernateDemoMain">
+    <configuration name="HibernateDemoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demos.hibernate.HibernateDemoMain" />
+      <module name="introduction-to-hibernate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demos.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JpaDemoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demos.hibernate.JpaDemoMain" />
+      <module name="introduction-to-hibernate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demos.hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HibernateDemoMain" />
+        <item itemvalue="Application.JpaDemoMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0cc464bc-8dc6-4a97-9d59-13d731b1bdff" name="Default Changelist" comment="" />
+      <created>1582217750230</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582217750230</updated>
+      <workItem from="1582217754478" duration="10977000" />
+      <workItem from="1582269613386" duration="3862000" />
+      <workItem from="1582281938202" duration="125000" />
+      <workItem from="1582282331670" duration="422000" />
+      <workItem from="1582283897991" duration="3360000" />
+      <workItem from="1582287754529" duration="131000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582269768545">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="446" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1582269768545" />
+    <state x="682" y="339" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1582287882938">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="682" y="339" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1707.920@0.0.1707.920" timestamp="1582287882938" />
+    <state width="1663" height="425" key="GridCell.Tab.0.bottom" timestamp="1582287260665">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="425" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
+    <state width="1663" height="425" key="GridCell.Tab.0.center" timestamp="1582287260665">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="425" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
+    <state width="1663" height="425" key="GridCell.Tab.0.left" timestamp="1582287260665">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="425" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
+    <state width="1663" height="425" key="GridCell.Tab.0.right" timestamp="1582287260665">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="425" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
+    <state x="232" y="0" width="1475" height="842" key="SettingsEditor" timestamp="1582287884825">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="232" y="0" width="1475" height="842" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1582287884825" />
+    <state x="687" y="174" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1582223434664">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="687" y="174" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1707.920@0.0.1707.920" timestamp="1582223434664" />
+    <state x="576" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1582281940640">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="576" y="290" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1582281940640" />
+  </component>
+</project>
