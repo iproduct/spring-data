@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cc464bc-8dc6-4a97-9d59-13d731b1bdff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07aa115e-b683-4055-8d8b-39bdcd29a24f.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07aa115e-b683-4055-8d8b-39bdcd29a24f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/613c024a-d5de-47f5-9b41-7cf2af402175.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/613c024a-d5de-47f5-9b41-7cf2af402175/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/71f6c435-b220-4aa1-8047-d3e6342117be.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/71f6c435-b220-4aa1-8047-d3e6342117be/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/introduction-to-hibernate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demos/hibernate/HibernateDemoMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demos/hibernate/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/student.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/JdbcIntro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/lib/mysql-connector-java-8.0.19.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/sql/soft_uni_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/introduction-to-jpa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/introduction-to-jpa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/src/main/java/demos/hibernate/JpaDemoMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/src/main/java/demos/hibernate/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-jpa/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +61,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Y51gEsMMSq2CmSHJxjgDFYbtaU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -123,7 +79,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../workspace/spring-demo-last-test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -225,12 +181,27 @@
       <workItem from="1582281938202" duration="125000" />
       <workItem from="1582282331670" duration="422000" />
       <workItem from="1582283897991" duration="3360000" />
-      <workItem from="1582287754529" duration="131000" />
+      <workItem from="1582287754529" duration="516000" />
+      <workItem from="1582292581738" duration="14000" />
+      <workItem from="1582808981486" duration="46000" />
     </task>
+    <task id="LOCAL-00001" summary="spring data projects initial commit">
+      <created>1582287970428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582287970428</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="spring data projects initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring data projects initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="123" key="#Notifications" timestamp="1582287995253">
@@ -249,22 +220,26 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="441" y="62" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1582287969362" />
-    <state width="1663" height="425" key="GridCell.Tab.0.bottom" timestamp="1582287260665">
+    <state x="634" y="218" key="FileChooserDialogImpl" timestamp="1582809025042">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
-    <state width="1663" height="425" key="GridCell.Tab.0.center" timestamp="1582287260665">
+    <state x="634" y="218" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1582809025042" />
+    <state width="1663" height="425" key="GridCell.Tab.0.bottom" timestamp="1582288270729">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
-    <state width="1663" height="425" key="GridCell.Tab.0.left" timestamp="1582287260665">
+    <state width="1663" height="425" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582288270729" />
+    <state width="1663" height="425" key="GridCell.Tab.0.center" timestamp="1582288270728">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
-    <state width="1663" height="425" key="GridCell.Tab.0.right" timestamp="1582287260665">
+    <state width="1663" height="425" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1582288270728" />
+    <state width="1663" height="425" key="GridCell.Tab.0.left" timestamp="1582288270727">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1582287260665" />
+    <state width="1663" height="425" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1582288270727" />
+    <state width="1663" height="425" key="GridCell.Tab.0.right" timestamp="1582288270728">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1663" height="425" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1582288270728" />
     <state x="232" y="0" width="1475" height="842" key="SettingsEditor" timestamp="1582287884825">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -277,9 +252,9 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="687" y="174" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1707.920@0.0.1707.920" timestamp="1582223434664" />
-    <state x="576" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1582281940640">
+    <state x="576" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1582292581940">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="576" y="290" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1582281940640" />
+    <state x="576" y="290" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1582292581940" />
   </component>
 </project>
