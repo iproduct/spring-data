@@ -2,10 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27a00672-fda0-4031-b7bb-5576b11e9f94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/init/AccountsDemoRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/SpringdataIntroApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/dao/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/domain/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/domain/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/domain/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/domain/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/exception/IllegalBankOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/init/AccountsDemoRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/demos/springdata/springdataintro/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demos/springdata/springdataintro/SpringdataIntroApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/domain/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/domain/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/SpringdataIntroApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/dao/AccountRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/dao/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/domain/AccountService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/domain/AccountServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/domain/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/domain/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/exception/IllegalBankOperationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/init/AccountsDemoRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/model/Account.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/java/demos/springdata/springdataintro/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata-intro/src/test/java/demos/springdata/springdataintro/SpringdataIntroApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,11 +101,14 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1YOt3af5HCO2B2bGmBwKjYJADUs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,6 +116,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="GO_FMT" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -83,12 +128,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23772103" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -100,16 +146,51 @@
       <recent name="demos.springdata.springdataintro.model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.SpringdataIntroApplication (1)">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="springdata-intro" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="springdata-intro" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringdataIntroApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springdata-intro2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demos.springdata.springdataintro.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="demos.springdata.springdataintro.SpringdataIntroApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,6 +211,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringdataIntroApplication (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -142,6 +250,8 @@
       <option name="presentableId" value="Default" />
       <updated>1582825269905</updated>
       <workItem from="1582825274152" duration="9722000" />
+      <workItem from="1582922173883" duration="203000" />
+      <workItem from="1582922405707" duration="532000" />
     </task>
     <task id="LOCAL-00001" summary="sprind data demos added">
       <created>1582832478718</created>
@@ -157,10 +267,15 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="sprind data demos added" />
     <option name="LAST_COMMIT_MESSAGE" value="sprind data demos added" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="461" y="106" key="#SpringdataIntroApplication" timestamp="1582922931163">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="461" y="106" key="#SpringdataIntroApplication/0.0.1707.920@0.0.1707.920" timestamp="1582922931163" />
     <state x="446" y="104" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582826092684">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -169,46 +284,51 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="530" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1582833130492" />
-    <state x="178" y="0" key="CommitChangelistDialog2" timestamp="1582832473599">
+    <state x="178" y="0" key="CommitChangelistDialog2" timestamp="1582923075157">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="178" y="0" key="CommitChangelistDialog2/0.0.1707.920/2560.0.1280.680@0.0.1707.920" timestamp="1582832473599" />
-    <state width="1639" height="353" key="GridCell.Tab.0.bottom" timestamp="1582907015086">
+    <state x="178" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1582923075157" />
+    <state x="634" y="218" key="FileChooserDialogImpl" timestamp="1582922450803">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state width="1639" height="353" key="GridCell.Tab.0.center" timestamp="1582907015086">
+    <state x="634" y="218" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1582922450803" />
+    <state width="1485" height="242" key="GridCell.Tab.0.bottom" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state width="1639" height="353" key="GridCell.Tab.0.left" timestamp="1582907015086">
+    <state width="1485" height="242" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state width="1485" height="242" key="GridCell.Tab.0.center" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state width="1639" height="353" key="GridCell.Tab.0.right" timestamp="1582907015086">
+    <state width="1485" height="242" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state width="1485" height="242" key="GridCell.Tab.0.left" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state width="1639" height="353" key="GridCell.Tab.1.bottom" timestamp="1582907015086">
+    <state width="1485" height="242" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state width="1485" height="242" key="GridCell.Tab.0.right" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state width="1639" height="353" key="GridCell.Tab.1.center" timestamp="1582907015086">
+    <state width="1485" height="242" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state width="1485" height="242" key="GridCell.Tab.1.bottom" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state width="1639" height="353" key="GridCell.Tab.1.left" timestamp="1582907015086">
+    <state width="1485" height="242" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state width="1485" height="242" key="GridCell.Tab.1.center" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state width="1639" height="353" key="GridCell.Tab.1.right" timestamp="1582907015086">
+    <state width="1485" height="242" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state width="1485" height="242" key="GridCell.Tab.1.left" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1639" height="353" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1582907015086" />
-    <state x="126" y="0" key="SettingsEditor" timestamp="1582828704854">
+    <state width="1485" height="242" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state width="1485" height="242" key="GridCell.Tab.1.right" timestamp="1582923129245">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="126" y="0" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1582828704854" />
+    <state width="1485" height="242" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1582923129245" />
+    <state x="327" y="75" key="SettingsEditor" timestamp="1582922831479">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="327" y="75" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1582922831479" />
     <state x="246" y="66" key="Vcs.Push.Dialog.v2" timestamp="1582832487765">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -217,6 +337,10 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="685" y="121" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1707.920@0.0.1707.920" timestamp="1582826110290" />
+    <state x="576" y="288" key="com.intellij.ide.util.TipDialog" timestamp="1582922963646">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="576" y="288" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1582922963646" />
     <state x="342" y="203" key="run.anything.popup" timestamp="1582831283953">
       <screen x="0" y="0" width="1707" height="920" />
     </state>

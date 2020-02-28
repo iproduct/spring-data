@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/springdata-intro/springdata-intro.iml" filepath="$PROJECT_DIR$/springdata-intro/springdata-intro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springdata-intro2.iml" filepath="$PROJECT_DIR$/springdata-intro2.iml" />
     </modules>
   </component>
 </project>
