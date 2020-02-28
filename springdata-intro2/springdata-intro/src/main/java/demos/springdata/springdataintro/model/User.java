@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -26,8 +27,7 @@ public class User {
     private int age;
 
     @OneToMany(mappedBy = "user", targetEntity = Account.class, cascade = CascadeType.ALL)
-    @NonNull
-    private Set<Account> accounts;
+    private Set<Account> accounts = new HashSet<>();
 
     @Override
     public boolean equals(Object o) {

@@ -19,6 +19,7 @@ public class AccountServiceImpl implements AccountService{
         return accountRepository.findById(accountId);
     }
 
+    @Transactional
     @Override
     public void withdrawMoney(long accountId, BigDecimal amount) {
         Account account = accountRepository.findById(accountId);
@@ -31,6 +32,7 @@ public class AccountServiceImpl implements AccountService{
         accountRepository.save(account);
     }
 
+    @Transactional
     @Override
     public void depositMoney(long accountId, BigDecimal amount) {
         Account account = accountRepository.findById(accountId);
