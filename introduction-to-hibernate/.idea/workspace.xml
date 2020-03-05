@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cc464bc-8dc6-4a97-9d59-13d731b1bdff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Shampoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/repositories/IngredientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/repositories/LabelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/repositories/ShampooRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/resources/shampoos-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/resources/shampoos-insert.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/sql/soft_uni_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/sql/employees_database.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jpa/.idea/introduction-to-jpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/introduction-to-jpa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springdata-intro2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springdata-intro2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +95,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../workspace/spring-demo-last-test" />
+    <property name="last_opened_file_path" value="D:/CourseSpring/git/course-spring5/06-restmvc-jdbc-boot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -184,6 +200,8 @@
       <workItem from="1582287754529" duration="516000" />
       <workItem from="1582292581738" duration="14000" />
       <workItem from="1582808981486" duration="46000" />
+      <workItem from="1583385679147" duration="393000" />
+      <workItem from="1583386099932" duration="1836000" />
     </task>
     <task id="LOCAL-00001" summary="spring data projects initial commit">
       <created>1582287970428</created>
@@ -220,10 +238,10 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="441" y="62" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1582287969362" />
-    <state x="634" y="218" key="FileChooserDialogImpl" timestamp="1582809025042">
+    <state x="634" y="218" key="FileChooserDialogImpl" timestamp="1583388690595">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="634" y="218" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1582809025042" />
+    <state x="634" y="218" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1583388690595" />
     <state width="1663" height="425" key="GridCell.Tab.0.bottom" timestamp="1582288270729">
       <screen x="0" y="0" width="1707" height="920" />
     </state>

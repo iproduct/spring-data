@@ -4,8 +4,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
-CREATE DATABASE IF NOT EXISTS `soft_uni` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `soft_uni`;
+CREATE DATABASE IF NOT EXISTS `employees` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `employees`;
 
 
 CREATE TABLE IF NOT EXISTS `addresses` (
@@ -311,7 +311,6 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(288, '5724 Victory Lane', 11),
 	(289, '591 Merriewood Drive', 11),
 	(290, '7230 Vine Maple Street', 11),
-	(291, '163 Nishava Str, ent A, apt. 1', 32);
 /*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
 
 
@@ -662,10 +661,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(287, 'Tete', 'Mensa-Annan', 'A', 'Sales Representative', 3, 268, '2004-11-01 00:00:00.000000', 23100.0000, 53),
 	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
 	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
-	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
-	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153);
 /*!40000 ALTER TABLE `employees` ENABLE KEYS */;
 
 
