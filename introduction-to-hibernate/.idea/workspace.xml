@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cc464bc-8dc6-4a97-9d59-13d731b1bdff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Label.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Shampoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/entities/Size.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/repositories/IngredientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/repositories/LabelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/java/demos/springdata/advanced/repositories/ShampooRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-quering/src/main/resources/shampoos-insert.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/resources/shampoos-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/dao/IngredientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/dao/LabelRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/dao/ShampooRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Shampoo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Size.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/sql/soft_uni_database.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/sql/employees_database.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jpa/.idea/introduction-to-jpa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jpa/.idea/introduction-to-jpa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springdata-intro2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springdata-intro2/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +194,7 @@
       <workItem from="1582808981486" duration="46000" />
       <workItem from="1583385679147" duration="393000" />
       <workItem from="1583386099932" duration="1836000" />
+      <workItem from="1583433081900" duration="230000" />
     </task>
     <task id="LOCAL-00001" summary="spring data projects initial commit">
       <created>1582287970428</created>
