@@ -12,6 +12,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Component;
 
 import java.awt.*;
@@ -82,17 +83,15 @@ public class AppInitializer implements ApplicationRunner {
 ////                        i.getId(), i.getName(), i.getPrice()));
 
         //8. Print in pages of 5
-        Page<Shampoo> page = shampooRepo.findAll(PageRequest.of(0,5));
-        System.out.printf("Page %d of %d:%n------------------%n", page.getNumber(), page.getTotalPages());
-        page.forEach(s -> System.out.printf("%s %s %s %.2f %s%n",
-                s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice(),
-                s.getIngredients().stream().map(Ingredient::getName).collect(Collectors.toList())));
-        while(page.hasNext()){
-            page = shampooRepo.findAll(page.nextPageable());
-            System.out.printf("Page %d of %d:%n------------------%n", page.getNumber(), page.getTotalPages());
+        Page<Shampoo> page;
+        Pageable pageable = PageRequest.of(0,5);
+        do {
+            page = shampooRepo.findAll(pageable);
+            System.out.printf("Page %d of %d:%n------------------%n", page.getNumber()+1, page.getTotalPages());
             page.forEach(s -> System.out.printf("%s %s %s %.2f %s%n",
                     s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice(),
                     s.getIngredients().stream().map(Ingredient::getName).collect(Collectors.toList())));
-        }
+            pageable = pageable.next();
+        } while(page.hasNext());
     }
 }
