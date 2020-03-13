@@ -39,7 +39,7 @@ public class PostServiceImpl  implements PostService {
         if(authorId != null) {
             User author = userRepo.findById(authorId)
                     .orElseThrow(() -> new InvalidEntityException("Author with ID=" + authorId + " does not exist."));
-            post.getAuthor();
+            post.setAuthor(author);
         }
         if(post.getCreated() == null) {
             post.setCreated(new Date());
