@@ -8,7 +8,7 @@ class BlogApi {
             BLOG_API_BASE + "/posts"
         );
         const postsFound = await postsResp.json();
-        console.log(postsFound.items);
+        console.log(postsFound);
         return postsFound;
     }
 

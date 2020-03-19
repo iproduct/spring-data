@@ -1,10 +1,13 @@
 package demos.springdata.restdemo.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.Expose;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.URL;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 import static javax.persistence.GenerationType.IDENTITY;
@@ -14,10 +17,12 @@ import static javax.persistence.GenerationType.IDENTITY;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public class Post {
     @Expose
     @Id
     @GeneratedValue(strategy = IDENTITY)
+    @EqualsAndHashCode.Include
     private Long id;
 
     @Expose
@@ -31,11 +36,19 @@ public class Post {
     private String content;
 
     @Expose
+    @NotNull
+    @NonNull
+    @Length(min=8, max=512)
+    @URL
+    private String imageUrl;
+
+    @Expose
     @ManyToOne(optional = true)
     private User author;
 
     @Expose(serialize = false)
     @Transient
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Long authorId;
 
     @Expose

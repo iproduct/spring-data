@@ -21,10 +21,14 @@ public class PostGsonDeserializer implements JsonDeserializer<Post> {
         JsonElement jsonId = jsonObject.get("id");
         JsonElement jsonTile = jsonObject.get("title");
         JsonElement jsonContent = jsonObject.get("content");
+        JsonElement jsonImageUrl = jsonObject.get("imageUrl");
         JsonElement jsonAuthorId = jsonObject.get("authorId");
         JsonElement jsonCreated = jsonObject.get("created");
 
-        Post post = new Post(jsonTile.getAsString().toUpperCase(), jsonContent.getAsString());
+        if(jsonTile == null || jsonContent == null || jsonImageUrl == null) {
+            throw new InvalidEntityException("Title, content, and image URL are required.");
+        }
+        Post post = new Post(jsonTile.getAsString().toUpperCase(), jsonContent.getAsString(), jsonImageUrl.getAsString());
         if(jsonId != null) {
             post.setId(jsonId.getAsLong());
         }

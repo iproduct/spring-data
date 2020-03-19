@@ -2,6 +2,8 @@ package demos.springdata.restdemo.web;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import demos.springdata.restdemo.gson.PostGsonDeserializer;
+import demos.springdata.restdemo.gson.PostGsonSerializer;
 import demos.springdata.restdemo.model.Post;
 import demos.springdata.restdemo.service.PostService;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +30,8 @@ public class SimplePostController {
         gson = new GsonBuilder()
                 .excludeFieldsWithoutExposeAnnotation()
                 .setPrettyPrinting()
+                .registerTypeAdapter(Post.class, new PostGsonSerializer())
+                .registerTypeAdapter(Post.class, new PostGsonDeserializer())
                 .create();
     }
 

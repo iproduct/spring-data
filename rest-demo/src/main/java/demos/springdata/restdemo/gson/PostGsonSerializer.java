@@ -10,7 +10,7 @@ import java.lang.reflect.Type;
 import java.text.SimpleDateFormat;
 
 public class PostGsonSerializer implements JsonSerializer<Post> {
-    private SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 
     @Override
     public JsonElement serialize(Post post, Type type,
@@ -29,6 +29,7 @@ public class PostGsonSerializer implements JsonSerializer<Post> {
                 post.getAuthor().getFirstName() + " " + post.getAuthor().getLastName() : null);
 
         actorJsonObj.addProperty("Content", post.getContent());
+        actorJsonObj.addProperty("ImageUrl", post.getImageUrl());
 
         return actorJsonObj;
     }

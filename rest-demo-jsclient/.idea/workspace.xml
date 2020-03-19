@@ -2,111 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7352ef96-668d-4144-87fd-4522f7749f2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/RestDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/config/SpringSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/dao/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/dao/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/events/PostCreationEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/events/UserCreationEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/exception/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/exception/InvalidEntityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/gson/PostGsonDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/gson/PostGsonSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/Credentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/Views.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/service/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/web/ExceptionHandlerControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/web/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/web/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/web/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/web/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-final/src/test/java/demos/springdata/restdemo/RestDemoApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rest-demo-jsclient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/materialize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/reading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/materialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/materialize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BlogAPI.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PostForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PostForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PostList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mock-posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/exception/InvalidEntityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/exception/EntityNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/exception/InvalidEntityIdException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/gson/PostGsonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/gson/PostGsonDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/service/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/web/ExceptionHandlerControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/web/ExceptionHandlerControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/web/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/web/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-master/src/main/java/demos/springdata/jsondemo/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/dao/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/ExceptionHandlerControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/RestDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/RestDemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlogAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +108,7 @@
       <workItem from="1583768926252" duration="632000" />
       <workItem from="1584607815663" duration="600000" />
       <workItem from="1584615859511" duration="107000" />
-      <workItem from="1584616112365" duration="14079000" />
+      <workItem from="1584616112365" duration="17007000" />
     </task>
     <servers />
   </component>

@@ -48,7 +48,7 @@ function App() {
                             <PostList showFavs={true} posts={posts} favs={favs} addToFavs={addToFavs}
                                       removeFromFavs={removeFromFavs}/>
                         </Route>
-                        <Route path="/">
+                        <Route exact path="/">
                             <Header titleText="Bookmark your favourite posts" buttonText="View Favourites"
                                     buttonLink="/favs"/>
                             <PostList showFavs={false} posts={posts} favs={favs} addToFavs={addToFavs}
@@ -83,7 +83,7 @@ function App() {
         console.log(post);
         BlogAPI.createPost(post)
             .then(created => {
-                setPosts(oldPosts => [...oldPosts, post]);
+                setPosts(oldPosts => [...oldPosts, created]);
             });
     }
 
