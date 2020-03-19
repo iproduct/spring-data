@@ -3,7 +3,7 @@ package demos.springdata.jsondemo.service;
 import demos.springdata.jsondemo.dao.UserRepository;
 import demos.springdata.jsondemo.events.UserCreationEvent;
 import demos.springdata.jsondemo.exception.EntityNotFoundException;
-import demos.springdata.jsondemo.exception.InvalidEntityIdException;
+import demos.springdata.jsondemo.exception.InvalidEntityException;
 import demos.springdata.jsondemo.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,16 +13,12 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionDefinition;
-import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.event.TransactionPhase;
 import org.springframework.transaction.event.TransactionalEventListener;
-import org.springframework.transaction.support.DefaultTransactionDefinition;
 import org.springframework.transaction.support.TransactionTemplate;
 import org.springframework.validation.annotation.Validated;
 
-import javax.validation.ConstraintViolationException;
 import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -60,7 +56,7 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public User createUser(User user) {
         repo.findByUsername(user.getUsername()).ifPresent(u -> {
-            throw new InvalidEntityIdException(String.format("User with username '%s' already exists.", user.getUsername()));
+            throw new InvalidEntityException(String.format("User with username '%s' already exists.", user.getUsername()));
         });
         user.setCreated(new Date());
         user.setUpdated(new Date());

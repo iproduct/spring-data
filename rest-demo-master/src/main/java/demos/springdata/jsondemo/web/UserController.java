@@ -1,6 +1,6 @@
 package demos.springdata.jsondemo.web;
 
-import demos.springdata.jsondemo.exception.InvalidEntityIdException;
+import demos.springdata.jsondemo.exception.InvalidEntityException;
 import demos.springdata.jsondemo.model.User;
 import demos.springdata.jsondemo.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -46,7 +46,7 @@ public class UserController {
 
     @PutMapping("{id}")
     public ResponseEntity<User> addUser(@PathVariable long id, @RequestBody User user) {
-        if(user.getId() != id) throw new InvalidEntityIdException(
+        if(user.getId() != id) throw new InvalidEntityException(
                 String.format("User ID=%s from path is different from Entity ID=%s", id, user.getId()));
         User updated = service.updateUser(user);
         log.info("User updated: {}", updated);

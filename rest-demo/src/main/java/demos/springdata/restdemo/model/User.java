@@ -6,7 +6,6 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -19,6 +18,9 @@ import static javax.persistence.GenerationType.IDENTITY;
 @RequiredArgsConstructor
 @AllArgsConstructor
 public class User {
+    public static final String ROLE_USER = "ROLE_USER";
+    public static final String ROLE_ADMIN = "ROLE_ADMIN";
+
     @Expose
     @Id
     @GeneratedValue(strategy = IDENTITY)
@@ -49,9 +51,9 @@ public class User {
     private String password;
 
     @Expose
-    @NotNull
     @NonNull
-    private String role = "ROLE_USER";
+    @NotNull
+    private String roles;
 
     private boolean active = true;
 

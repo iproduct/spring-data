@@ -1,6 +1,5 @@
 package demos.springdata.restdemo.dao;
 
-import demos.springdata.restdemo.model.Post;
 import demos.springdata.restdemo.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -4,7 +4,7 @@ import demos.springdata.jsondemo.dao.PostRepository;
 import demos.springdata.jsondemo.dao.UserRepository;
 import demos.springdata.jsondemo.events.PostCreationEvent;
 import demos.springdata.jsondemo.exception.EntityNotFoundException;
-import demos.springdata.jsondemo.exception.InvalidEntityIdException;
+import demos.springdata.jsondemo.exception.InvalidEntityException;
 import demos.springdata.jsondemo.model.Post;
 import demos.springdata.jsondemo.model.User;
 import lombok.extern.slf4j.Slf4j;
@@ -82,7 +82,7 @@ public class PostServiceImpl implements PostService {
         article.setUpdated(new Date());
         Post old = getPostById(article.getId());
         if(article.getAuthor() != null && article.getAuthor().getId() != old.getAuthor().getId())
-            throw new InvalidEntityIdException("Author of article could not ne changed");
+            throw new InvalidEntityException("Author of article could not ne changed");
         article.setAuthor(old.getAuthor());
         return postRepo.save(article);
     }

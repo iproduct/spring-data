@@ -1,15 +1,12 @@
 package demos.springdata.jsondemo.gson;
 
 import com.google.gson.*;
-import demos.springdata.jsondemo.exception.InvalidEntityIdException;
+import demos.springdata.jsondemo.exception.InvalidEntityException;
 import demos.springdata.jsondemo.model.Post;
 
 import java.lang.reflect.Type;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
 
 public class PostGsonDeserializer implements JsonDeserializer<Post> {
 
@@ -39,7 +36,7 @@ public class PostGsonDeserializer implements JsonDeserializer<Post> {
             try {
                 post.setCreated(sdf.parse(jsonCreated.getAsString()));
             } catch (ParseException e) {
-                throw new InvalidEntityIdException("Error parsing creation date: " + e.getMessage());
+                throw new InvalidEntityException("Error parsing creation date: " + e.getMessage());
             }
         }
         return post;

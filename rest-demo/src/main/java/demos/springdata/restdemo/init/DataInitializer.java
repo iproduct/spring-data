@@ -11,6 +11,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+import static demos.springdata.restdemo.model.User.ROLE_ADMIN;
+import static demos.springdata.restdemo.model.User.ROLE_USER;
+
 @Component
 @Slf4j
 public class DataInitializer implements CommandLineRunner {
@@ -25,16 +28,16 @@ public class DataInitializer implements CommandLineRunner {
             new Post("New in Spring 5", "Webflux provides reactive and non-blocking web service implemntation ...")
     );
     private static final List<User> SAMPLE_USERS = List.of(
-            new User("Default", "Admin", "admin", "admin"),
-            new User("Ivan", "Pertov", "ivan", "ivan")
+            new User("Default", "Admin", "admin", "admin",ROLE_ADMIN),
+            new User("Ivan", "Pertov", "ivan", "ivan", ROLE_USER)
     );
     @Override
     public void run(String... args) throws Exception {
-        SAMPLE_USERS.forEach(user -> userService.addUser(user));
+        SAMPLE_USERS.forEach(user -> userService.createUser(user));
         log.info("Created Users: {}", userService.getUsers());
         SAMPLE_POSTS.forEach(post -> {
             post.setAuthor(userService.getUserById(1L));
-            postService.addPost(post);
+            postService.createPost(post);
         });
         log.info("Created Posts: {}", postService.getPosts());
     }

@@ -1,7 +1,7 @@
 package demos.springdata.jsondemo.web;
 
 import demos.springdata.jsondemo.exception.EntityNotFoundException;
-import demos.springdata.jsondemo.exception.InvalidEntityIdException;
+import demos.springdata.jsondemo.exception.InvalidEntityException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class ExceptionHandlerControllerAdvice {
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
     }
 
-    @ExceptionHandler({InvalidEntityIdException.class, ConstraintViolationException.class})
+    @ExceptionHandler({InvalidEntityException.class, ConstraintViolationException.class})
     public ResponseEntity<String> handle(Exception ex){
         log.error(ex.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

@@ -1,9 +1,8 @@
 package demos.springdata.jsondemo.web;
 
 import com.fasterxml.jackson.annotation.JsonView;
-import demos.springdata.jsondemo.exception.InvalidEntityIdException;
+import demos.springdata.jsondemo.exception.InvalidEntityException;
 import demos.springdata.jsondemo.model.Post;
-import demos.springdata.jsondemo.model.User;
 import demos.springdata.jsondemo.model.Views;
 import demos.springdata.jsondemo.service.PostService;
 import demos.springdata.jsondemo.service.UserService;
@@ -61,7 +60,7 @@ public class PostController {
     @PutMapping("{id}")
     @JsonView(Views.Post.class)
     public ResponseEntity<Post> updatePost(@PathVariable long id, @RequestBody Post post) {
-        if(post.getId() != id) throw new InvalidEntityIdException(
+        if(post.getId() != id) throw new InvalidEntityException(
                 String.format("Post ID=%s from path is different from Entity ID=%s", id, post.getId()));
         Post updated = postService.updatePost(post);
         log.info("Post updated: {}", updated);

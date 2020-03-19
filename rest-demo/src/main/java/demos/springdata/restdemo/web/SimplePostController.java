@@ -8,7 +8,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.json.GsonBuilderUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 
@@ -42,7 +41,7 @@ public class SimplePostController {
         log.info("Body received: {}", body);
         Post post = gson.fromJson(body, Post.class);
         log.info("Post deserialized: {}", post);
-        Post created = postService.addPost(post);
+        Post created = postService.createPost(post);
         URI uri = MvcUriComponentsBuilder
                 .fromMethodName(SimplePostController.class,"addPost", post)
                 .pathSegment("{id}").buildAndExpand(created.getId()).toUri();
