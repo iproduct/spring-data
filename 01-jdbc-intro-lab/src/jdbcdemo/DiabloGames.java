@@ -20,7 +20,7 @@ public class DiabloGames {
             e.printStackTrace();
         }
 
-        // TODO: add meaningful deafults
+        // TODO: add meaningful defaults
         System.out.println(props);
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter username (<Enter> for 'Alex'): ");
