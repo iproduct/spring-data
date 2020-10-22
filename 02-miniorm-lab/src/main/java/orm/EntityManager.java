@@ -14,6 +14,8 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import static orm.EntityManagerUtils.*;
+
 public class EntityManager<T> implements DbContext<T> {
     private static final String SELECT_STAR_FROM = "SELECT * FROM ";
     private static final String INSERT_QUERY = "INSERT INTO %s (%s) VALUE (%s) ;";
@@ -42,11 +44,11 @@ public class EntityManager<T> implements DbContext<T> {
         String query = SELECT_STAR_FROM +  getTableName(table) +
                 (where.equals("") ? "" : " WHERE " + where + ";");
 
-        ResultSet resultSet = executeQuery(query, values);
+        ResultSet resultSet = executeQuery(connection, query, values);
         List<T> result = new ArrayList<>();
         while(resultSet.next()) {
             T entity = table.getConstructor().newInstance();
-            this.fillEntity(table, resultSet, entity);
+            fillEntity(table, resultSet, entity);
             result.add(entity);
         }
         return result;
@@ -58,10 +60,10 @@ public class EntityManager<T> implements DbContext<T> {
         String query = SELECT_STAR_FROM +  getTableName(table) +
                 (where.equals("") ? "" : " WHERE " + where + " LIMIT 1;");
 
-        ResultSet resultSet = executeQuery(query, values);
+        ResultSet resultSet = executeQuery(connection, query, values);
         T entity = table.getConstructor().newInstance();
         if(resultSet.next()) {
-            this.fillEntity(table, resultSet, entity);
+            fillEntity(table, resultSet, entity);
             return entity;
         } else {
             return null;
@@ -76,8 +78,9 @@ public class EntityManager<T> implements DbContext<T> {
     @Override
     public int delete(Class<T> table, int id) throws SQLException {
         String query = String.format(DELETE_QUERY, getTableName(table), "id = " +id);
-        return executeUpdate(query);
+        return executeUpdate(connection, query);
     }
+
 
     // Utility methods
     private int doInsert(Object entity, Field primary) throws SQLException {
@@ -85,7 +88,7 @@ public class EntityManager<T> implements DbContext<T> {
         String fieldNamesStr = getFieldNames(entity).stream().collect(Collectors.joining(", "));
         String fieldValuesStr = getFieldValues(entity).stream().collect(Collectors.joining(", "));
         String insertQuery = String.format(INSERT_QUERY, tableName, fieldNamesStr, fieldValuesStr);
-        return executeUpdate(insertQuery);
+        return executeUpdate(connection, insertQuery);
     }
 
     private int doUpdate(Object entity, Field primaryKey) throws IllegalAccessException, SQLException {
@@ -112,94 +115,8 @@ public class EntityManager<T> implements DbContext<T> {
                 tableName, String.join(", ", setFieldNameAndValues),
                 " id = " + primaryKey.get(entity));
 
-        return executeUpdate(insertQuery);
+        return executeUpdate(connection, insertQuery);
     }
 
-
-    private ResultSet executeQuery(String sql, Object... values) throws SQLException {
-        PreparedStatement ps = connection.prepareStatement(sql);
-        for(int i = 0; i < values.length; i++) {
-            switch(values[i].getClass().getSimpleName()) {
-                case "Integer": ps.setInt(i + 1, (int) values[i]); break;
-                case "Double": ps.setDouble(i + 1, (double) values[i]); break;
-                default : ps.setString(i + 1, values[i].toString()); break;
-            }
-        }
-        return ps.executeQuery();
-    }
-
-    private int executeUpdate(String sql) throws SQLException {
-        PreparedStatement ps = connection.prepareStatement(sql);
-        return ps.executeUpdate();
-    }
-
-
-    private Field getIdField(Class entity) {
-        return Arrays.stream(entity.getDeclaredFields())
-                .filter(field -> field.isAnnotationPresent(Id.class))
-                .findFirst()
-                .orElseThrow(() -> new UnsupportedOperationException("Entity does not have a primary key."));
-    }
-
-    private String getTableName(Class<?> entity) {
-        Entity entityAnnotation = entity.getAnnotation(Entity.class);
-        if (entityAnnotation != null && entityAnnotation.name().length() > 0) {
-            return entityAnnotation.name();
-        } else {
-            return entity.getSimpleName();
-        }
-    }
-
-    private List<String> getFieldNames(Object entity) {
-        return Arrays.stream(entity.getClass().getDeclaredFields())
-                .filter(field -> field.isAnnotationPresent(Column.class))
-                .map(field -> {
-                    field.setAccessible(true);
-                    return field.getAnnotation(Column.class).name();
-                })
-                .collect(Collectors.toList());
-    }
-
-    private List<String> getFieldValues(Object entity) {
-        Function<Field, String> getFieldValue = field -> {
-            field.setAccessible(true);
-            try {
-                Object value = field.get(entity);
-                return field.getType() == String.class || field.getType() == LocalDate.class ?
-                        String.format("'%s'", value.toString()) :
-                        value.toString();
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            }
-            return "";
-        };
-        return Arrays.stream(entity.getClass().getDeclaredFields())
-                .filter(field -> field.isAnnotationPresent(Column.class))
-                .map(getFieldValue)
-                .collect(Collectors.toList());
-    }
-
-    private void fillEntity(Class<T> table, ResultSet resultSet, T entity) throws SQLException, IllegalAccessException {
-
-        Field[] declaredFields = table.getDeclaredFields();
-        for (Field field : declaredFields) {
-            field.setAccessible(true);
-
-            fillField(field, entity, resultSet,
-                    field.isAnnotationPresent(Id.class)
-                            ? "id" : field.getAnnotation(Column.class).name());
-        }
-    }
-
-    private void fillField(Field field, T entity, ResultSet resultSet, String name) throws SQLException, IllegalAccessException {
-        field.setAccessible(true);
-        switch (name) {
-            case "id": field.set(entity, resultSet.getInt("id")); break;
-            case "username": field.set(entity, resultSet.getString("username")); break;
-            case "password": field.set(entity, resultSet.getString("password")); break;
-            case "age": field.set(entity, resultSet.getInt("age")); break;
-            case "registrationDate": field.set(entity, resultSet.getString("registration_date")); break;
-        }
-    }
 
 }

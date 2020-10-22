@@ -31,12 +31,14 @@ public class Main {
         entityManager.persist(user);
         System.out.println(entityManager.findFirst(User.class, "username like ?", "%8"));
         System.out.println(entityManager.findById(User.class, 2));
+
         System.out.printf("Number of deleted records: %d%n", entityManager.delete(User.class, 2));
+
         System.out.println("--------------------------------\nUsers above 40:");
         System.out.println(listToString(entityManager.find(User.class, "age > ? ", 40)));
+
         System.out.println("--------------------------------\nAll Users:");
         System.out.println(listToString(entityManager.find(User.class, "")));
-
     }
 
     private static Connection getConnection() throws SQLException {
