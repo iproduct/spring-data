@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 
 public class EntityManager<E> implements DbContext {
     private static final String SELECT_STAR_FROM = "SELECT * FROM ";
-    private static final String INSERT_QUERY = "INSERT INTO %s (id, %s) VALUE (%s) ;";
+    private static final String INSERT_QUERY = "INSERT INTO %s (%s) VALUE (%s) ;";
     private static final String UPDATE_QUERY = "UPDATE %s SET %s WHERE %s ;";
     private static final String DELETE_QUERY = "DELETE FROM %s WHERE %s ;";
     private Connection connection;
@@ -31,7 +31,7 @@ public class EntityManager<E> implements DbContext {
         primary.setAccessible(true);
         Object value = primary.get(entity);
 
-        return (value != null && (int) value > 0 ) ?
+        return (value != null && (int) value > 0) ?
                 doUpdate(entity, primary) :
                 doInsert(entity, primary);
     }
@@ -60,15 +60,39 @@ public class EntityManager<E> implements DbContext {
     // Utility methods
     private boolean doInsert(Object entity, Field primary) throws SQLException {
         String tableName = getTableName(entity.getClass());
-        List<String> fieldNames = getFieldNames(entity);
-        List<String> fieldValues = getFieldValues(entity);
-        String insertQuery = String.format(INSERT_QUERY, tableName, fieldNames, fieldValues);
+        String fieldNamesStr = getFieldNames(entity).stream().collect(Collectors.joining(", "));
+        String fieldValuesStr = getFieldValues(entity).stream().collect(Collectors.joining(", "));
+        String insertQuery = String.format(INSERT_QUERY, tableName, fieldNamesStr, fieldValuesStr);
         return executeQuery(insertQuery);
     }
 
-    private boolean doUpdate(Object entity, Field primary) {
-        return false;
+    private boolean doUpdate(Object entity, Field primaryKey) throws IllegalAccessException, SQLException {
+        String tableName = getTableName(entity.getClass());
+        Function<Field, String> getFieldNameAndValue = (Field x) -> {
+            x.setAccessible(true);
+            try {
+                return String.format(" %s = %s",
+                        x.isAnnotationPresent(Id.class)
+                                ? "id" : x.getAnnotation(Column.class).name(),
+                        x.getType() == String.class || x.getType() == LocalDate.class
+                                ? "'" + x.get(entity) + "'"
+                                : x.get(entity).toString());
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+            return "";
+        };
+        List<String> setFieldNameAndValues = Arrays.stream(entity.getClass().getDeclaredFields())
+                .map(getFieldNameAndValue)
+                .collect(Collectors.toList());
+
+        String insertQuery = String.format(UPDATE_QUERY,
+                tableName, String.join(", ", setFieldNameAndValues),
+                " id = " + primaryKey.get(entity));
+
+        return executeQuery(insertQuery);
     }
+
 
     private boolean executeQuery(String sql) throws SQLException {
         PreparedStatement ps = connection.prepareStatement(sql);
@@ -85,7 +109,7 @@ public class EntityManager<E> implements DbContext {
 
     private String getTableName(Class<?> entity) {
         Entity entityAnnotation = entity.getAnnotation(Entity.class);
-        if(entityAnnotation != null && entityAnnotation.name().length() > 0) {
+        if (entityAnnotation != null && entityAnnotation.name().length() > 0) {
             return entityAnnotation.name();
         } else {
             return entity.getSimpleName();
@@ -104,9 +128,9 @@ public class EntityManager<E> implements DbContext {
 
     private List<String> getFieldValues(Object entity) {
         Function<Field, String> getFieldValue = field -> {
-                field.setAccessible(true);
+            field.setAccessible(true);
             try {
-                Object value =  field.get(entity);
+                Object value = field.get(entity);
                 return field.getType() == String.class || field.getType() == LocalDate.class ?
                         String.format("'%s'", value.toString()) :
                         value.toString();
@@ -120,7 +144,6 @@ public class EntityManager<E> implements DbContext {
                 .map(getFieldValue)
                 .collect(Collectors.toList());
     }
-
 
 
 }
