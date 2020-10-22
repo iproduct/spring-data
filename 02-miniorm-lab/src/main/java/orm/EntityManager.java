@@ -5,16 +5,15 @@ import orm.annotation.Entity;
 import orm.annotation.Id;
 
 import java.lang.reflect.Field;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.lang.reflect.InvocationTargetException;
+import java.sql.*;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class EntityManager<E> implements DbContext {
+public class EntityManager<T> implements DbContext<T> {
     private static final String SELECT_STAR_FROM = "SELECT * FROM ";
     private static final String INSERT_QUERY = "INSERT INTO %s (%s) VALUE (%s) ;";
     private static final String UPDATE_QUERY = "UPDATE %s SET %s WHERE %s ;";
@@ -36,25 +35,34 @@ public class EntityManager<E> implements DbContext {
                 doInsert(entity, primary);
     }
 
-
     @Override
-    public Iterable find(Class table) {
+    public List<T> find(Class<T> table, String where) throws SQLException, IllegalAccessException, InstantiationException {
         return null;
     }
 
     @Override
-    public Iterable find(Class table, String where) {
-        return null;
+    public T findFirst(Class<T> table, String where) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+        Statement statement = connection.createStatement();
+        String query = SELECT_STAR_FROM +  getTableName(table) +
+                (where.equals("") ? "" : " " + where + " LIMIT 1;");
+
+        ResultSet resultSet = statement.executeQuery(query);
+        T entity = table.getConstructor().newInstance();
+        resultSet.next();
+        this.fillEntity(table, resultSet, entity);
+        return entity;
     }
 
     @Override
-    public Object findFirst(Class table) {
-        return null;
+    public T findById(Class<T> table, int id) throws IllegalAccessException, SQLException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+        return findFirst(table, "WHERE id = " + id);
     }
 
     @Override
-    public Object findFirst(Class table, String where) {
-        return null;
+    public boolean delete(Class<T> table, int id) throws SQLException {
+        String query = String.format(DELETE_QUERY, getTableName(table), "id = " +id);
+
+        return executeQuery(query);
     }
 
     // Utility methods
@@ -145,5 +153,27 @@ public class EntityManager<E> implements DbContext {
                 .collect(Collectors.toList());
     }
 
+    private void fillEntity(Class<T> table, ResultSet resultSet, T entity) throws SQLException, IllegalAccessException {
+
+        Field[] declaredFields = table.getDeclaredFields();
+        for (Field field : declaredFields) {
+            field.setAccessible(true);
+
+            fillField(field, entity, resultSet,
+                    field.isAnnotationPresent(Id.class)
+                            ? "id" : field.getAnnotation(Column.class).name());
+        }
+    }
+
+    private void fillField(Field field, T entity, ResultSet resultSet, String name) throws SQLException, IllegalAccessException {
+        field.setAccessible(true);
+        switch (name) {
+            case "id": field.set(entity, resultSet.getInt("id")); break;
+            case "username": field.set(entity, resultSet.getString("username")); break;
+            case "password": field.set(entity, resultSet.getString("password")); break;
+            case "age": field.set(entity, resultSet.getInt("age")); break;
+            case "registrationDate": field.set(entity, resultSet.getString("registration_date")); break;
+        }
+    }
 
 }

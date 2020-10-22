@@ -20,18 +20,18 @@ public class Main {
 
         System.out.println("Connected to database.");
         User user = new User();
-//        user.setId(2);
-        user.setUsername("88888");
-        user.setPassword("MyPass34");
-        user.setAge(22);
+        user.setId(6);
+        user.setUsername("999999");
+        user.setPassword("!!!!!!!!!!");
+        user.setAge(42);
         user.setRegistrationDate(LocalDate.of(2000,11,1));
 
         entityManager.persist(user);
 
 
-//        System.out.println(entityManager.findFirst(User.class, " where username like '%8'"));
-//        System.out.println(entityManager.findById(User.class, 6));
-//        System.out.println(entityManager.delete(User.class, 6));
+        System.out.println(entityManager.findFirst(User.class, " where username like '%8'"));
+        System.out.println(entityManager.findById(User.class, 6));
+        System.out.println(entityManager.delete(User.class, 9));
 
     }
 
