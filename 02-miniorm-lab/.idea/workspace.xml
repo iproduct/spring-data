@@ -32,13 +32,7 @@
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/mini-orm.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/sql/create-db.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-miniorm-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/orm/Connector.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/jarRepositories.xml" afterDir="false" />
@@ -160,11 +154,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603387548781</updated>
-      <workItem from="1603387550042" duration="622000" />
+      <workItem from="1603387550042" duration="941000" />
     </task>
+    <task id="LOCAL-00001" summary="User created">
+      <created>1603388208190</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603388208190</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="User created" />
+    <option name="LAST_COMMIT_MESSAGE" value="User created" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1603388157569">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1603388157569" />
+    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603388202615">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603388202615" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603388209911">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603388209911" />
   </component>
 </project>
