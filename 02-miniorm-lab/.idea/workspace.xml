@@ -13,25 +13,12 @@
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/01-jdbc-intro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/mini-orm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/orm/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/orm/DbContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/orm/EntityManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/orm/annotations/Column.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/orm/annotations/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm-lab/src/main/java/orm/annotations/Id.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/mini-orm.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/sql/create-db.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-miniorm-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/create-db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/jarRepositories.xml" afterDir="false" />
@@ -51,7 +38,9 @@
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/spring-data.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orm/DbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orm/DbContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/orm/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orm/EntityManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
@@ -104,10 +93,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -117,10 +109,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="orm.annotation" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CourseSpringData\git\spring-data\02-miniorm-lab" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="02-miniorm-lab" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -154,6 +158,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -163,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603387548781</updated>
-      <workItem from="1603387550042" duration="4374000" />
+      <workItem from="1603387550042" duration="6750000" />
     </task>
     <task id="LOCAL-00001" summary="User created">
       <created>1603388208190</created>
@@ -207,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603390444326</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="getTableName and getIdField helper methods by reflection">
+      <created>1603391973515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603391973515</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,20 +236,53 @@
     <MESSAGE value="EntityManager stub created" />
     <MESSAGE value="ORM basic annotations created" />
     <MESSAGE value="ORM mapping added to User entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="ORM mapping added to User entity" />
+    <MESSAGE value="getTableName and getIdField helper methods by reflection" />
+    <option name="LAST_COMMIT_MESSAGE" value="getTableName and getIdField helper methods by reflection" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603393996900">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1603393996900" />
     <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1603389263622">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1603389263622" />
-    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603390443552">
+    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603391972556">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603390443552" />
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603390445528">
+    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603391972556" />
+    <state width="1651" height="228" key="GridCell.Tab.0.bottom" timestamp="1603394269455">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603390445528" />
+    <state width="1651" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603394269455" />
+    <state width="1651" height="228" key="GridCell.Tab.0.center" timestamp="1603394269455">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1651" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603394269455" />
+    <state width="1651" height="228" key="GridCell.Tab.0.left" timestamp="1603394269455">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1651" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603394269455" />
+    <state width="1651" height="228" key="GridCell.Tab.0.right" timestamp="1603394269455">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1651" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603394269455" />
+    <state x="625" y="385" key="ReplaceDuplicatesPrompt" timestamp="1603392808960">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="625" y="385" key="ReplaceDuplicatesPrompt/0.0.1707.920@0.0.1707.920" timestamp="1603392808960" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603391975777">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603391975777" />
+    <state x="519" y="154" width="669" height="614" key="extract.method.dialog" timestamp="1603392798063">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="519" y="154" width="669" height="614" key="extract.method.dialog/0.0.1707.920@0.0.1707.920" timestamp="1603392798063" />
+    <state width="711" height="625" key="javadoc.popup.new" timestamp="1603393685548">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="711" height="625" key="javadoc.popup.new/0.0.1707.920@0.0.1707.920" timestamp="1603393685548" />
   </component>
 </project>
