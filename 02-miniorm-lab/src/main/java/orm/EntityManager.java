@@ -26,7 +26,7 @@ public class EntityManager<T> implements DbContext<T> {
     }
 
     @Override
-    public boolean persist(Object entity) throws IllegalAccessException, SQLException {
+    public int persist(Object entity) throws IllegalAccessException, SQLException {
         Field primary = getIdField(entity.getClass());
         primary.setAccessible(true);
         Object value = primary.get(entity);
@@ -37,12 +37,12 @@ public class EntityManager<T> implements DbContext<T> {
     }
 
     @Override
-    public List<T> find(Class<T> table, String where) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+    public List<T> find(Class<T> table, String where, Object... values) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
         Statement statement = connection.createStatement();
         String query = SELECT_STAR_FROM +  getTableName(table) +
-                (where.equals("") ? "" : " " + where +";");
+                (where.equals("") ? "" : " WHERE " + where + ";");
 
-        ResultSet resultSet = statement.executeQuery(query);
+        ResultSet resultSet = executeQuery(query, values);
         List<T> result = new ArrayList<>();
         while(resultSet.next()) {
             T entity = table.getConstructor().newInstance();
@@ -53,40 +53,42 @@ public class EntityManager<T> implements DbContext<T> {
     }
 
     @Override
-    public T findFirst(Class<T> table, String where) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+    public T findFirst(Class<T> table, String where, Object... values) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
         Statement statement = connection.createStatement();
         String query = SELECT_STAR_FROM +  getTableName(table) +
-                (where.equals("") ? "" : " " + where + " LIMIT 1;");
+                (where.equals("") ? "" : " WHERE " + where + " LIMIT 1;");
 
-        ResultSet resultSet = statement.executeQuery(query);
+        ResultSet resultSet = executeQuery(query, values);
         T entity = table.getConstructor().newInstance();
-        resultSet.next();
-        this.fillEntity(table, resultSet, entity);
-        return entity;
+        if(resultSet.next()) {
+            this.fillEntity(table, resultSet, entity);
+            return entity;
+        } else {
+            return null;
+        }
     }
 
     @Override
     public T findById(Class<T> table, int id) throws IllegalAccessException, SQLException, InstantiationException, NoSuchMethodException, InvocationTargetException {
-        return findFirst(table, "WHERE id = " + id);
+        return findFirst(table, "id = ?", id);
     }
 
     @Override
-    public boolean delete(Class<T> table, int id) throws SQLException {
+    public int delete(Class<T> table, int id) throws SQLException {
         String query = String.format(DELETE_QUERY, getTableName(table), "id = " +id);
-
-        return executeQuery(query);
+        return executeUpdate(query);
     }
 
     // Utility methods
-    private boolean doInsert(Object entity, Field primary) throws SQLException {
+    private int doInsert(Object entity, Field primary) throws SQLException {
         String tableName = getTableName(entity.getClass());
         String fieldNamesStr = getFieldNames(entity).stream().collect(Collectors.joining(", "));
         String fieldValuesStr = getFieldValues(entity).stream().collect(Collectors.joining(", "));
         String insertQuery = String.format(INSERT_QUERY, tableName, fieldNamesStr, fieldValuesStr);
-        return executeQuery(insertQuery);
+        return executeUpdate(insertQuery);
     }
 
-    private boolean doUpdate(Object entity, Field primaryKey) throws IllegalAccessException, SQLException {
+    private int doUpdate(Object entity, Field primaryKey) throws IllegalAccessException, SQLException {
         String tableName = getTableName(entity.getClass());
         Function<Field, String> getFieldNameAndValue = (Field x) -> {
             x.setAccessible(true);
@@ -110,13 +112,25 @@ public class EntityManager<T> implements DbContext<T> {
                 tableName, String.join(", ", setFieldNameAndValues),
                 " id = " + primaryKey.get(entity));
 
-        return executeQuery(insertQuery);
+        return executeUpdate(insertQuery);
     }
 
 
-    private boolean executeQuery(String sql) throws SQLException {
+    private ResultSet executeQuery(String sql, Object... values) throws SQLException {
         PreparedStatement ps = connection.prepareStatement(sql);
-        return ps.execute();
+        for(int i = 0; i < values.length; i++) {
+            switch(values[i].getClass().getSimpleName()) {
+                case "Integer": ps.setInt(i + 1, (int) values[i]); break;
+                case "Double": ps.setDouble(i + 1, (double) values[i]); break;
+                default : ps.setString(i + 1, values[i].toString()); break;
+            }
+        }
+        return ps.executeQuery();
+    }
+
+    private int executeUpdate(String sql) throws SQLException {
+        PreparedStatement ps = connection.prepareStatement(sql);
+        return ps.executeUpdate();
     }
 
 
