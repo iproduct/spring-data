@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.stream.Collectors;
 
 public class Main {
     private static final String CONNECTION_STRING = "jdbc:mysql://localhost:3306/fsd";
@@ -20,18 +21,19 @@ public class Main {
 
         System.out.println("Connected to database.");
         User user = new User();
-        user.setId(6);
+//        user.setId(6);
         user.setUsername("999999");
         user.setPassword("!!!!!!!!!!");
         user.setAge(42);
         user.setRegistrationDate(LocalDate.of(2000,11,1));
 
         entityManager.persist(user);
-
-
         System.out.println(entityManager.findFirst(User.class, " where username like '%8'"));
         System.out.println(entityManager.findById(User.class, 6));
-        System.out.println(entityManager.delete(User.class, 9));
+        System.out.println(entityManager.delete(User.class, 16));
+        System.out.println("--------------------------------\nAll Users:");
+        System.out.println(entityManager.find(User.class, "").stream()
+                .map(User::toString).collect(Collectors.joining("\n")));
 
     }
 

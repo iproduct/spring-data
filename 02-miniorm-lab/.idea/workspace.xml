@@ -170,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603387548781</updated>
-      <workItem from="1603387550042" duration="8903000" />
+      <workItem from="1603387550042" duration="10205000" />
     </task>
     <task id="LOCAL-00001" summary="User created">
       <created>1603388208190</created>
@@ -235,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603395168462</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Mian testing class added">
+      <created>1603396475312</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603396475312</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,34 +272,34 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="519" y="146" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1707.920@0.0.1707.920" timestamp="1603394858699" />
-    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603395167533">
+    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603396474569">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603395167533" />
-    <state width="1651" height="228" key="GridCell.Tab.0.bottom" timestamp="1603396377805">
+    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603396474569" />
+    <state width="1651" height="228" key="GridCell.Tab.0.bottom" timestamp="1603396494703">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603396377805" />
-    <state width="1651" height="228" key="GridCell.Tab.0.center" timestamp="1603396377805">
+    <state width="1651" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603396494703" />
+    <state width="1651" height="228" key="GridCell.Tab.0.center" timestamp="1603396494703">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603396377805" />
-    <state width="1651" height="228" key="GridCell.Tab.0.left" timestamp="1603396377805">
+    <state width="1651" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603396494703" />
+    <state width="1651" height="228" key="GridCell.Tab.0.left" timestamp="1603396494703">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603396377805" />
-    <state width="1651" height="228" key="GridCell.Tab.0.right" timestamp="1603396377805">
+    <state width="1651" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603396494703" />
+    <state width="1651" height="228" key="GridCell.Tab.0.right" timestamp="1603396494703">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603396377805" />
+    <state width="1651" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603396494703" />
     <state x="625" y="385" key="ReplaceDuplicatesPrompt" timestamp="1603392808960">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="625" y="385" key="ReplaceDuplicatesPrompt/0.0.1707.920@0.0.1707.920" timestamp="1603392808960" />
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603395169736">
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603396476560">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603395169735" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603396476560" />
     <state x="573" y="154" width="669" height="614" key="extract.method.dialog" timestamp="1603394800793">
       <screen x="0" y="0" width="1707" height="920" />
     </state>

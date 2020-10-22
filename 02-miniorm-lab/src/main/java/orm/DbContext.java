@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface DbContext<T> {
     boolean persist(T entity) throws IllegalAccessException, SQLException;
-    List<T> find(Class<T> table , String where) throws SQLException, IllegalAccessException, InstantiationException;
+    List<T> find(Class<T> table , String where) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException;
 
     T findFirst(Class<T> table, String where) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException;
 

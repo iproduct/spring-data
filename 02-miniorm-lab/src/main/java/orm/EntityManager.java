@@ -8,6 +8,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
@@ -36,8 +37,19 @@ public class EntityManager<T> implements DbContext<T> {
     }
 
     @Override
-    public List<T> find(Class<T> table, String where) throws SQLException, IllegalAccessException, InstantiationException {
-        return null;
+    public List<T> find(Class<T> table, String where) throws SQLException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
+        Statement statement = connection.createStatement();
+        String query = SELECT_STAR_FROM +  getTableName(table) +
+                (where.equals("") ? "" : " " + where +";");
+
+        ResultSet resultSet = statement.executeQuery(query);
+        List<T> result = new ArrayList<>();
+        while(resultSet.next()) {
+            T entity = table.getConstructor().newInstance();
+            this.fillEntity(table, resultSet, entity);
+            result.add(entity);
+        }
+        return result;
     }
 
     @Override
