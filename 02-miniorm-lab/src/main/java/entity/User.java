@@ -1,5 +1,6 @@
 package entity;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class User {
@@ -7,12 +8,12 @@ public class User {
     private String username;
     private String password;
     private int age;
-    private String registrationDate;
+    private LocalDate registrationDate;
 
     public User() {
     }
 
-    public User(String username, String password, int age, String registrationDate) {
+    public User(String username, String password, int age, LocalDate registrationDate) {
         this.username = username;
         this.password = password;
         this.age = age;
@@ -51,11 +52,11 @@ public class User {
         this.age = age;
     }
 
-    public String getRegistrationDate() {
+    public LocalDate getRegistrationDate() {
         return registrationDate;
     }
 
-    public void setRegistrationDate(String registrationDate) {
+    public void setRegistrationDate(LocalDate registrationDate) {
         this.registrationDate = registrationDate;
     }
 

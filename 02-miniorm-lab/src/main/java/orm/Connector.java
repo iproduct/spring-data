@@ -8,7 +8,6 @@ import java.util.Properties;
 public class Connector {
     public static final String DB_URL = "jdbc:mysql://localhost:3306/";
 
-
     private static Connection connection;
 
     public static void createConnection(String dbName, String user, String password) throws SQLException {
