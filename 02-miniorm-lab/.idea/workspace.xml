@@ -32,7 +32,9 @@
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/mini-orm.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/sql/create-db.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-miniorm-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/EntityManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/orm/annotation/Column.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/orm/annotation/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/orm/annotation/Id.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/jarRepositories.xml" afterDir="false" />
@@ -52,6 +54,7 @@
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/spring-data.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
@@ -77,6 +80,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -111,6 +115,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.23772103" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="orm.annotation" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -155,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603387548781</updated>
-      <workItem from="1603387550042" duration="1678000" />
+      <workItem from="1603387550042" duration="1995000" />
     </task>
     <task id="LOCAL-00001" summary="User created">
       <created>1603388208190</created>
@@ -178,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603388926283</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="EntityManager stub created">
+      <created>1603389293738</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603389293738</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,20 +204,21 @@
     <MESSAGE value="User created" />
     <MESSAGE value="Connectior created" />
     <MESSAGE value="DbContext interface added" />
-    <option name="LAST_COMMIT_MESSAGE" value="DbContext interface added" />
+    <MESSAGE value="EntityManager stub created" />
+    <option name="LAST_COMMIT_MESSAGE" value="EntityManager stub created" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1603389012118">
+    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1603389263622">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1603389012118" />
-    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603388925324">
+    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1603389263622" />
+    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603389292979">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603388925324" />
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603388927754">
+    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603389292979" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603389294797">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603388927754" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603389294797" />
   </component>
 </project>
