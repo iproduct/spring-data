@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7cddf4b-cb48-4ba3-8601-f87bf4895158" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-jpa-intro-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/JpaIntroMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/StudentOld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    <list default="true" id="f7cddf4b-cb48-4ba3-8601-f87bf4895158" name="Default Changelist" comment="JPA intro project added">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-hibernate-intro-lab/src/main/java/course/springdata/hibernateintro/HibernateIntroMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-hibernate-intro-lab/src/main/java/course/springdata/hibernateintro/HibernateIntroMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" afterDir="false" />
@@ -26,6 +14,10 @@
       <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../03-intro-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-jpa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-jpa-intro-lab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/03-jpa-intro-lab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-hibernate/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,21 +59,35 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="2eb4465a-f0a2-44bb-8dd5-2af473a57993" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/META-INF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23772103" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="test.entity" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CourseSpringData\git\spring-data\03-jpa-intro-lab\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="course.springdate.jpaintro.entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CourseSpringData\git\spring-data\03-jpa-intro-lab\src\main\resources\META-INF" />
+      <recent name="D:\CourseSpringData\git\spring-data\03-jpa-intro-lab" />
     </key>
   </component>
   <component name="RunManager">
@@ -146,45 +152,81 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603740928872</updated>
-      <workItem from="1603740930076" duration="3918000" />
+      <workItem from="1603740930076" duration="8189000" />
     </task>
+    <task id="LOCAL-00001" summary="JPA intro project added">
+      <created>1603745007370</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603745007370</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JPA intro project added" />
+    <option name="LAST_COMMIT_MESSAGE" value="JPA intro project added" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="730" y="327" key="#Assign_Data_Sources" timestamp="1603744448330">
+    <state x="730" y="327" key="#Assign_Data_Sources" timestamp="1603747892580">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="730" y="327" key="#Assign_Data_Sources/0.0.1707.920@0.0.1707.920" timestamp="1603744448330" />
-    <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603742535583">
+    <state x="730" y="327" key="#Assign_Data_Sources/0.0.1707.920@0.0.1707.920" timestamp="1603747892580" />
+    <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603746992771">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1603742535583" />
+    <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1603746992771" />
     <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1603741544788">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1603741544788" />
-    <state width="1651" height="579" key="GridCell.Tab.0.bottom" timestamp="1603744679293">
+    <state x="541" y="347" width="761" height="225" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1603747202613">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603744679293" />
-    <state width="1651" height="579" key="GridCell.Tab.0.center" timestamp="1603744679293">
+    <state x="541" y="347" width="761" height="225" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1707.920@0.0.1707.920" timestamp="1603747202613" />
+    <state x="522" y="129" width="984" height="747" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1603748167343">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603744679293" />
-    <state width="1651" height="579" key="GridCell.Tab.0.left" timestamp="1603744679293">
+    <state x="522" y="129" width="984" height="747" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1707.920@0.0.1707.920" timestamp="1603748167343" />
+    <state x="363" y="0" key="CommitChangelistDialog2" timestamp="1603747872722">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603744679293" />
-    <state width="1651" height="579" key="GridCell.Tab.0.right" timestamp="1603744679293">
+    <state x="363" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603747872722" />
+    <state x="449" y="139" key="FileChooserDialogImpl" timestamp="1603746145970">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603744679293" />
-    <state x="246" y="19" key="SettingsEditor" timestamp="1603744521280">
+    <state x="449" y="139" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1603746145970" />
+    <state width="1651" height="579" key="GridCell.Tab.0.bottom" timestamp="1603744942508">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="246" y="19" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1603744521280" />
+    <state width="1651" height="579" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603744942508" />
+    <state width="1651" height="579" key="GridCell.Tab.0.center" timestamp="1603744942507">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1651" height="579" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603744942507" />
+    <state width="1651" height="579" key="GridCell.Tab.0.left" timestamp="1603744942507">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1651" height="579" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603744942507" />
+    <state width="1651" height="579" key="GridCell.Tab.0.right" timestamp="1603744942508">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state width="1651" height="579" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603744942508" />
+    <state x="246" y="0" key="SettingsEditor" timestamp="1603747204550">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="246" y="0" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1603747204550" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603745008579">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603745008579" />
+    <state x="640" y="223" key="chooseDestDirectoryDialog" timestamp="1603745299165">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="640" y="223" key="chooseDestDirectoryDialog/0.0.1707.920@0.0.1707.920" timestamp="1603745299165" />
   </component>
 </project>

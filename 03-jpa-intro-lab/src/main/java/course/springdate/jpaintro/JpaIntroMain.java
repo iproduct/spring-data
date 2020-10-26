@@ -31,7 +31,10 @@ public class JpaIntroMain {
         em.detach(found);
         found.setName("Atanas Petrov");
         Student managedEntity = em.merge(found);
-        System.out.printf("Same reference: %b", managedEntity == found);
+//        System.out.printf("Same reference: %b", managedEntity == found);
+        System.out.printf("!!!  Given student identity: %s, Returned from merge student identity: %s\n",
+                Integer.toHexString(System.identityHashCode(found)),
+                Integer.toHexString(System.identityHashCode(managedEntity)));
 //        Student removed = em.find(Student.class, 1L);
 //        System.out.printf("Removed entity: %s",removed );
         em.getTransaction().commit();
