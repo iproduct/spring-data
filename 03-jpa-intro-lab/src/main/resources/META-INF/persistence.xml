@@ -6,8 +6,6 @@
              version="2.2">
 
     <persistence-unit name="school_jpa">
-        <class>test.entity.StudentsEntity</class>
-        <class>test.entity.Students</class>
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/school_jpa" />
             <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver" />
