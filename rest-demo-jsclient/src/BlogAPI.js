@@ -82,9 +82,9 @@ class BlogApi {
                 body: JSON.stringify(credentials)
             }
         );
-        const userLogged = await userResp.json();
-        console.log("USER logged-in successfully:", userLogged);
-        return userLogged;
+        const jwt = await userResp.json();
+        console.log("USER logged-in successfully:", jwt);
+        return jwt;
     }
 }
 

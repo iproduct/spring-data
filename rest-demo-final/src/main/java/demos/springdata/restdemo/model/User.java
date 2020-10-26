@@ -1,9 +1,6 @@
 package demos.springdata.restdemo.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.*;
 import com.google.gson.annotations.Expose;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;

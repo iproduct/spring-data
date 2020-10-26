@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="96eb5823-37a1-4ab5-a42a-5f425a6d8f38" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/01-jdbc-intro.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/misc.xml" afterDir="false" />
@@ -13,22 +14,6 @@
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/01-jdbc-intro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini-orm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/Connector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/DbContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/EntityManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/annotations/Column.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/annotations/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/annotations/Id.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/mini-orm.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/sql/create-db.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-miniorm-lab.iml" afterDir="false" />
@@ -51,9 +36,9 @@
       <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/spring-data.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/DbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/DbContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/EntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
@@ -178,38 +163,58 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603374878290</updated>
-      <workItem from="1603374879346" duration="7832000" />
+      <workItem from="1603374879346" duration="8523000" />
     </task>
+    <task id="LOCAL-00001" summary="doInsert() completed">
+      <created>1603393818726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603393818726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="doInsert() completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="doInsert() completed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1603377453724">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1603377453724" />
+    <state x="381" y="0" key="CommitChangelistDialog2" timestamp="1603393817930">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="381" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603393817930" />
     <state x="581" y="156" key="FileChooserDialogImpl" timestamp="1603387528969">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="581" y="156" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1603387528969" />
-    <state width="1651" height="228" key="GridCell.Tab.0.bottom" timestamp="1603387047538">
+    <state width="1651" height="228" key="GridCell.Tab.0.bottom" timestamp="1603398089564">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603387047538" />
-    <state width="1651" height="228" key="GridCell.Tab.0.center" timestamp="1603387047538">
+    <state width="1651" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603398089564" />
+    <state width="1651" height="228" key="GridCell.Tab.0.center" timestamp="1603398089564">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603387047538" />
-    <state width="1651" height="228" key="GridCell.Tab.0.left" timestamp="1603387047538">
+    <state width="1651" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603398089564" />
+    <state width="1651" height="228" key="GridCell.Tab.0.left" timestamp="1603398089564">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603387047538" />
-    <state width="1651" height="228" key="GridCell.Tab.0.right" timestamp="1603387047538">
+    <state width="1651" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603398089564" />
+    <state width="1651" height="228" key="GridCell.Tab.0.right" timestamp="1603398089564">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603387047538" />
+    <state width="1651" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603398089564" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603393820696">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603393820696" />
     <state x="519" y="165" key="extract.method.dialog" timestamp="1603380281225">
       <screen x="0" y="0" width="1707" height="920" />
     </state>

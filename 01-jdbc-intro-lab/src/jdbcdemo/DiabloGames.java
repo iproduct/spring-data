@@ -38,7 +38,7 @@ public class DiabloGames {
 
             // 3. Print results
             while (rs.next()) {
-                if (rs.getLong("id") == 0) {
+                if (rs.getString("id") == null) {
                     System.out.printf("DB user with username '%s' not found.", username);
                 } else {
                     System.out.printf("| %10d | %-15.15s | %-15.15s | %10d |%n",

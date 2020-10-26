@@ -1,16 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0cc464bc-8dc6-4a97-9d59-13d731b1bdff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/dao/IngredientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/dao/LabelRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/dao/ShampooRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Ingredient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Label.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Shampoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../advanced-query/src/main/java/demos/springdata/advanced/entity/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/01-jdbc-intro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/01-jdbc-intro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-mini-orm/mini-orm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-mini-orm/sql/create-db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-miniorm-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/03-intro-hibernate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources/b57e5f1e-9f5f-489a-8c0e-ddd4e0cf1023.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources/b57e5f1e-9f5f-489a-8c0e-ddd4e0cf1023/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/java/course/springdata/HibernateIntroMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/java/course/springdata/entities/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/03-intro-hibernate.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/03-intro-jpa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/1e354ed6-5f0d-4386-8a46-2928957efadc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/1e354ed6-5f0d-4386-8a46-2928957efadc/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/sql/soft_uni_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/src/main/java/course/springdata/JpaIntroMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/src/main/java/course/springdata/entities/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/src/main/java/course/springdata/entities/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/src/main/java/course/springdata/entities/Town.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/src/main/java/course/springdata/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-intro-jpa/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/jooq-streams-demo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/src/main/java/01-jdbc-intro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/src/main/java/jooqstreams/DiabloGames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/spring-data.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/DbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/DbContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/src/BlogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/src/BlogAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +136,18 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="D:/CourseGO/go" />
+  <component name="GOROOT" path="$PROJECT_DIR$/../../../../CourseGO/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KotlinMultiplatform">
+    <executables />
+  </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1Y51gEsMMSq2CmSHJxjgDFYbtaU" />
@@ -75,7 +157,6 @@
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -83,11 +164,12 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="D:/CourseSpring/git/course-spring5/06-restmvc-jdbc-boot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../CourseSpring/git/course-spring5/06-restmvc-jdbc-boot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -139,6 +221,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -162,18 +255,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -195,6 +277,7 @@
       <workItem from="1583385679147" duration="393000" />
       <workItem from="1583386099932" duration="1836000" />
       <workItem from="1583433081900" duration="230000" />
+      <workItem from="1603718556667" duration="5387000" />
     </task>
     <task id="LOCAL-00001" summary="spring data projects initial commit">
       <created>1582287970428</created>
@@ -207,7 +290,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -215,57 +298,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="spring data projects initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="123" key="#Notifications" timestamp="1582287995253">
+    <state x="581" y="156" key="FileChooserDialogImpl" timestamp="1603720371126">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="446" y="123" key="#Notifications/0.0.1707.920@0.0.1707.920" timestamp="1582287995253" />
-    <state x="446" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582269768545">
+    <state x="581" y="156" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1603720371126" />
+    <state x="441" y="0" key="new project wizard" timestamp="1603720380067">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="446" y="150" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1582269768545" />
-    <state x="682" y="339" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1582287882938">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="682" y="339" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1707.920@0.0.1707.920" timestamp="1582287882938" />
-    <state x="441" y="62" key="CommitChangelistDialog2" timestamp="1582287969362">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="441" y="62" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1582287969362" />
-    <state x="634" y="218" key="FileChooserDialogImpl" timestamp="1583388690595">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="634" y="218" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1583388690595" />
-    <state width="1663" height="425" key="GridCell.Tab.0.bottom" timestamp="1582288270729">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1582288270729" />
-    <state width="1663" height="425" key="GridCell.Tab.0.center" timestamp="1582288270728">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1582288270728" />
-    <state width="1663" height="425" key="GridCell.Tab.0.left" timestamp="1582288270727">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1582288270727" />
-    <state width="1663" height="425" key="GridCell.Tab.0.right" timestamp="1582288270728">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1663" height="425" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1582288270728" />
-    <state x="232" y="0" width="1475" height="842" key="SettingsEditor" timestamp="1582287884825">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="232" y="0" width="1475" height="842" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1582287884825" />
-    <state x="446" y="198" key="Vcs.Push.Dialog.v2" timestamp="1582287973740">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="446" y="198" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1582287973740" />
-    <state x="687" y="174" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1582223434664">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="687" y="174" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1707.920@0.0.1707.920" timestamp="1582223434664" />
-    <state x="576" y="290" key="com.intellij.ide.util.TipDialog" timestamp="1582292581940">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="576" y="290" key="com.intellij.ide.util.TipDialog/0.0.1707.920@0.0.1707.920" timestamp="1582292581940" />
+    <state x="441" y="0" key="new project wizard/0.0.1707.920@0.0.1707.920" timestamp="1603720380067" />
   </component>
 </project>

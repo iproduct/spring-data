@@ -18,6 +18,7 @@ public class Main2 {
         user = user.length() > 0 ? user : "root";
         props.setProperty("user", user);
 
+        System.out.println("Enter password (default root): ");
         String password = sc.nextLine().trim();
         password = password.length() > 0 ? password : "root";
         props.setProperty("password", password);
@@ -35,24 +36,26 @@ public class Main2 {
 //        try (
         Connection connection =
                 DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/employees?useSSL=false", props);
+                        "jdbc:mysql://localhost:3306/soft_uni", props);
 
         System.out.println("Connected successfully.");
 
         // 3. Execute query
         PreparedStatement stmt =
-                connection.prepareStatement("SELECT * FROM employees JOIN salaries ON employees.emp_no=salaries.emp_no WHERE salaries.salary > ?");
-        System.out.println("Enter  minimal salary (default 20000): ");
+                connection.prepareStatement("SELECT * FROM employees WHERE salary > ?");
+        System.out.println("Enter  minimal salary (default 40000): ");
         String salaryStr = sc.nextLine().trim();
+        salaryStr = salaryStr.length() > 0 ? salaryStr : "40000";
 //            String salaryStr = props.getProperty("salary", "20000");
         double salary = Double.parseDouble(salaryStr);
+
 
         stmt.setDouble(1, salary);
         ResultSet rs = stmt.executeQuery();
 
         // 4. Process results
         while (rs.next()) {
-            System.out.printf("| %-15.15s | %-15.15s | %10.2f |\n",
+            System.out.printf("| %-15.15s | %-15.15s | %10.2f |%n",
                     rs.getString(2),
                     rs.getString("last_name"),
                     rs.getDouble("salary")

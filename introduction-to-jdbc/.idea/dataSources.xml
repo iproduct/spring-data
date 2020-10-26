@@ -7,5 +7,17 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="soft_uni@localhost" uuid="d8059ce3-aeda-48fe-9a2e-42e34c14063e">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/soft_uni</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="diablo@localhost" uuid="1022b61c-2c43-4182-af21-0a54b51f4c6e">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/diablo</jdbc-url>
+    </data-source>
   </component>
 </project>

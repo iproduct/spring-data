@@ -100,9 +100,9 @@ function App() {
       history.push('/');
       console.log(credentials);
       BlogAPI.login(credentials)
-          .then(logged => {
-            setLoggedUser(logged);
-            sessionStorage.setItem('jwt', logged.jwt);
+          .then(loginResp => {
+            setLoggedUser(loginResp);
+            sessionStorage.setItem('loginResp', loginResp.jwt);
           });
     }
 

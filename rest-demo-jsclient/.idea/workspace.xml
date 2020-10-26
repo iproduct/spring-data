@@ -2,19 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7352ef96-668d-4144-87fd-4522f7749f2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/ExceptionHandlerControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/RestDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/RestDemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BlogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlogAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/gson/PostGsonSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +18,20 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -108,7 +117,8 @@
       <workItem from="1583768926252" duration="632000" />
       <workItem from="1584607815663" duration="600000" />
       <workItem from="1584615859511" duration="107000" />
-      <workItem from="1584616112365" duration="17007000" />
+      <workItem from="1584616112365" duration="21436000" />
+      <workItem from="1590067225638" duration="2965000" />
     </task>
     <servers />
   </component>

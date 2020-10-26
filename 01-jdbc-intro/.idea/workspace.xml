@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e48a870-244f-4b70-892a-f063b5ff7b99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/lib/mysql-connector-java-8.0.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/sql/diablo_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/sql/soft_uni_database.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/src/BlogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/src/BlogAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KotlinMultiplatform">
+    <executables />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1j6X5Deg8ca2PFkB7eExDhX8y2r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.23772103" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e48a870-244f-4b70-892a-f063b5ff7b99" name="Default Changelist" comment="" />
+      <created>1603125333439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603125333439</updated>
+      <workItem from="1603125334557" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

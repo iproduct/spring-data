@@ -17,7 +17,6 @@
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/mini-orm.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-mini-orm/sql/create-db.sql" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../02-miniorm-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/orm/EntityManagerUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/jarRepositories.xml" afterDir="false" />
@@ -38,8 +37,8 @@
       <change beforePath="$PROJECT_DIR$/../.idea/spring-data.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/orm/EntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orm/EntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/orm/DbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/orm/DbContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
@@ -169,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603387548781</updated>
-      <workItem from="1603387550042" duration="13802000" />
+      <workItem from="1603387550042" duration="14006000" />
     </task>
     <task id="LOCAL-00001" summary="User created">
       <created>1603388208190</created>
@@ -255,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603401477787</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="major refactoring of EntityManager - utility methods moved to EntytyManagerUtils class">
+      <created>1603402177608</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603402177608</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +278,8 @@
     <MESSAGE value="Mian testing class added" />
     <MESSAGE value="find List&lt;User&gt; find() with where clause completed." />
     <MESSAGE value="escaping of parameters in where clause of queries completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="escaping of parameters in where clause of queries completed" />
+    <MESSAGE value="major refactoring of EntityManager - utility methods moved to EntytyManagerUtils class" />
+    <option name="LAST_COMMIT_MESSAGE" value="major refactoring of EntityManager - utility methods moved to EntytyManagerUtils class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603393996900">
@@ -287,34 +294,34 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="519" y="146" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1707.920@0.0.1707.920" timestamp="1603394858699" />
-    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603401475128">
+    <state x="368" y="0" key="CommitChangelistDialog2" timestamp="1603402176866">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603401475128" />
-    <state width="1651" height="228" key="GridCell.Tab.0.bottom" timestamp="1603401504760">
+    <state x="368" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1603402176866" />
+    <state width="1651" height="470" key="GridCell.Tab.0.bottom" timestamp="1603402247455">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603401504760" />
-    <state width="1651" height="228" key="GridCell.Tab.0.center" timestamp="1603401504760">
+    <state width="1651" height="470" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603402247455" />
+    <state width="1651" height="470" key="GridCell.Tab.0.center" timestamp="1603402247455">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603401504760" />
-    <state width="1651" height="228" key="GridCell.Tab.0.left" timestamp="1603401504760">
+    <state width="1651" height="470" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603402247455" />
+    <state width="1651" height="470" key="GridCell.Tab.0.left" timestamp="1603402247455">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603401504760" />
-    <state width="1651" height="228" key="GridCell.Tab.0.right" timestamp="1603401504760">
+    <state width="1651" height="470" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603402247455" />
+    <state width="1651" height="470" key="GridCell.Tab.0.right" timestamp="1603402247455">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="228" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603401504760" />
+    <state width="1651" height="470" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603402247455" />
     <state x="625" y="385" key="ReplaceDuplicatesPrompt" timestamp="1603392808960">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="625" y="385" key="ReplaceDuplicatesPrompt/0.0.1707.920@0.0.1707.920" timestamp="1603392808960" />
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603401480674">
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1603402180481">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603401480674" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1603402180481" />
     <state x="573" y="154" width="669" height="614" key="extract.method.dialog" timestamp="1603394800793">
       <screen x="0" y="0" width="1707" height="920" />
     </state>

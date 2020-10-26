@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/spring-data.iml" filepath="$PROJECT_DIR$/.idea/spring-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-jdbc-intro.iml" filepath="$PROJECT_DIR$/01-jdbc-intro.iml" />
     </modules>
   </component>
 </project>
