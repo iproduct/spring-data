@@ -3,7 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="course.springdata.entities.Student" table="students">
+    <class name="course.springdata.entities.Student2" table="students">
         <meta attribute = "class-description">
             This class contains the student details.
         </meta>

@@ -5,91 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea80d627-766c-4c03-b9c3-59fc4e14db38" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/01-jdbc-intro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../01-jdbc-intro/01-jdbc-intro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm/mini-orm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-mini-orm/sql/create-db.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02-miniorm-lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/03-intro-hibernate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources/b57e5f1e-9f5f-489a-8c0e-ddd4e0cf1023.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/dataSources/b57e5f1e-9f5f-489a-8c0e-ddd4e0cf1023/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/java/course/springdata/HibernateIntroMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/java/course/springdata/entities/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/03-intro-hibernate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/03-intro-jpa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1e354ed6-5f0d-4386-8a46-2928957efadc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/1e354ed6-5f0d-4386-8a46-2928957efadc/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/soft_uni_database.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdata/JpaIntroMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdata/entities/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdata/entities/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdata/entities/Town.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdata/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../introduction-to-hibernate/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/jooq-streams-demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/src/main/java/01-jdbc-intro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/src/main/java/jooqstreams/DiabloGames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jooq-streams-demo/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/spring-data.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-jdbc-intro-lab/src/jdbcdemo/DiabloGames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-mini-orm-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/DbContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-miniorm-lab/src/main/java/orm/DbContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-hibernate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/.idea/libraries/mysql_connector_java_8_0_18.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/out/production/JdbcIntro/demo/Main2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-jdbc/src/demo/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/src/BlogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/src/BlogAPI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/03-jpa-intro-lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/src/main/java/course/springdate/jpaintro/JpaIntroMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/src/main/java/course/springdate/jpaintro/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-hibernate-intro-lab/src/main/java/course/springdata/hibernateintro/HibernateIntroMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../03-hibernate-intro-lab/src/main/java/course/springdata/hibernateintro/HibernateIntroMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,19 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -239,6 +160,7 @@
       <workItem from="1603720479723" duration="70000" />
       <workItem from="1603720564498" duration="3975000" />
       <workItem from="1603725379807" duration="2959000" />
+      <workItem from="1603742104744" duration="299000" />
     </task>
     <servers />
   </component>

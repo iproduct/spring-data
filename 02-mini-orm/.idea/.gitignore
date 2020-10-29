@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../../:\CourseSpringData\Materials\21.10.2020\svn.softuni.org\admin\svn\java-databases\Sept-2020\SpringData\02. Custom ORM Workshop\02mini-orm\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
