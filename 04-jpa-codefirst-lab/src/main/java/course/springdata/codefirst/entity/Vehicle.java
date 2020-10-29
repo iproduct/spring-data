@@ -4,12 +4,14 @@ import lombok.NonNull;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name="vehicles")
 @Inheritance(strategy = InheritanceType.JOINED)
-//@DiscriminatorColumn(name = "type")
+@DiscriminatorColumn(name = "type")
 public abstract class Vehicle {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,6 +21,8 @@ public abstract class Vehicle {
     private BigDecimal price;
     @Column(name = "fuel_type") // -> DB
     private String fuelType;
+    @ManyToMany(mappedBy = "vehicles")
+    private Set<Driver> drivers = new HashSet<>();
 
     public Vehicle() {
     }
@@ -66,6 +70,14 @@ public abstract class Vehicle {
 
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
+    }
+
+    public Set<Driver> getDrivers() {
+        return drivers;
+    }
+
+    public void setDrivers(Set<Driver> drivers) {
+        this.drivers = drivers;
     }
 
     @Override

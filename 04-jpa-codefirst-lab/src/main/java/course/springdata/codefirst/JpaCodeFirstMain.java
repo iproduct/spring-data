@@ -14,6 +14,7 @@ import javax.persistence.criteria.Root;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.List;
+import java.util.Set;
 
 public class JpaCodeFirstMain {
     public static void main(String[] args) {
@@ -33,6 +34,12 @@ public class JpaCodeFirstMain {
         Truck truck1 = new Truck("Fuso Canter", new BigDecimal(120000), "gasoline", 5.5);
         em.persist(truck1);
 
+        // Persist drivers
+        Driver driver1 = new Driver("John Smith", Set.of(car1, truck1));
+        car1.getDrivers().add(driver1);
+        truck1.getDrivers().add(driver1);
+        em.persist(driver1);
+
         // Persist company with all its planes using CascadeType.ALL
         Company company1 = new Company(new BigInteger("1234567890"), "Software AD");
         Plane plane1 = new Plane("Boing", new BigDecimal(1200000), "kerosene", 120, company1);
@@ -47,24 +54,20 @@ public class JpaCodeFirstMain {
         em.persist(company1);
         em.getTransaction().commit(); //end of transaction
 
-        em.getTransaction().begin();
+        // Find different types of entities by Id
         Car found = em.find(Car.class, 1L);
         System.out.printf("Found car1: %s%n", found);
         Truck truck = em.find(Truck.class, 2L);
         System.out.printf("Found truck1: %s%n", truck);
-        Plane plane = em.find(Plane.class, 3L);
-        System.out.printf("Found plane1: %s%n", plane);
-        em.getTransaction().commit();
+        Driver driver = em.find(Driver.class, 1L);
+        System.out.printf("Found driver1: %s%n", driver);
 
         // JPQL query
-        em.getTransaction().begin();
         em.createQuery("SELECT v FROM Vehicle v")   // WHERE c.name LIKE :name ORDER BY s.name")
 //                .setParameter("name", "%")
                 .getResultList().forEach(System.out::println);
-        em.getTransaction().commit();
 
         // Type safe Criteria query
-        em.getTransaction().begin();
         CriteriaBuilder cb = em.getCriteriaBuilder();
         CriteriaQuery<Company> query = cb.createQuery(Company.class);
         Root<Company> Company_ = query.from(Company.class);
@@ -72,7 +75,6 @@ public class JpaCodeFirstMain {
         query.select(Company_).where(cb.equal(Company_.get("name"), name));
         TypedQuery<Company> typedQuery = em.createQuery(query);
         Company companyFound = typedQuery.setParameter("name", "Software AD").getSingleResult();
-        em.getTransaction().commit();
 
         System.out.printf("Company '%s' planes:%n", companyFound);
         for(Plane p : companyFound.getPlanes()) {
