@@ -27,4 +27,12 @@ public class Truck extends Vehicle {
         super(id, model, price, fuelType);
         this.loadCapacity = loadCapacity;
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Truck{");
+        sb.append("loadCapacity=").append(loadCapacity);
+        sb.append('}');
+        return sb.toString();
+    }
 }

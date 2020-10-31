@@ -23,21 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7cddf4b-cb48-4ba3-8601-f87bf4895158" name="Default Changelist" comment="JPA intro project added">
-      <change afterPath="$PROJECT_DIR$/../03-hibernate-intro-lab/src/main/java/test/entities/Students.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/dataSources/2eb4465a-f0a2-44bb-8dd5-2af473a57993.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/Plane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/PlateNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/Truck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/dataSources/2eb4465a-f0a2-44bb-8dd5-2af473a57993/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introduction-to-hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../introduction-to-hibernate/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/dataSources/2eb4465a-f0a2-44bb-8dd5-2af473a57993/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/springdate/jpaintro/entity/Truck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603740928872</updated>
       <workItem from="1603740930076" duration="10680000" />
-      <workItem from="1603985718237" duration="9156000" />
+      <workItem from="1603985718237" duration="11362000" />
     </task>
     <task id="LOCAL-00001" summary="JPA intro project added">
       <created>1603745007370</created>
@@ -244,10 +232,10 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="446" y="111" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.920@0.0.1707.920" timestamp="1603987390306" />
-    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1603987186780">
+    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1604004805159">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1603987186780" />
+    <state x="612" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1707.920@0.0.1707.920" timestamp="1604004805159" />
     <state x="541" y="347" width="761" height="225" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1603747202613">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
@@ -264,22 +252,22 @@
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="449" y="139" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1604000601668" />
-    <state width="1651" height="579" key="GridCell.Tab.0.bottom" timestamp="1603989091056">
+    <state width="1651" height="579" key="GridCell.Tab.0.bottom" timestamp="1604006339572">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1603989091056" />
-    <state width="1651" height="579" key="GridCell.Tab.0.center" timestamp="1603989091056">
+    <state width="1651" height="579" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1604006339572" />
+    <state width="1651" height="579" key="GridCell.Tab.0.center" timestamp="1604006339572">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1603989091056" />
-    <state width="1651" height="579" key="GridCell.Tab.0.left" timestamp="1603989091056">
+    <state width="1651" height="579" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1604006339572" />
+    <state width="1651" height="579" key="GridCell.Tab.0.left" timestamp="1604006339572">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1603989091056" />
-    <state width="1651" height="579" key="GridCell.Tab.0.right" timestamp="1603989091056">
+    <state width="1651" height="579" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1604006339572" />
+    <state width="1651" height="579" key="GridCell.Tab.0.right" timestamp="1604006339572">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="579" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1603989091056" />
+    <state width="1651" height="579" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1604006339572" />
     <state x="246" y="0" key="SettingsEditor" timestamp="1603747204550">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
