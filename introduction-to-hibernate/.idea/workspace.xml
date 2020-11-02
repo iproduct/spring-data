@@ -5,15 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cc464bc-8dc6-4a97-9d59-13d731b1bdff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/dataSources/2eb4465a-f0a2-44bb-8dd5-2af473a57993.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-hibernate/src/main/resources/student.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/dataSources/00121a66-a4dc-465c-b194-cda9241ab282/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/dataSources/2eb4465a-f0a2-44bb-8dd5-2af473a57993/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-jpa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-intro-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-intro-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03-jpa-intro-lab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,15 +137,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,6 +195,7 @@
       <workItem from="1583433081900" duration="230000" />
       <workItem from="1603718556667" duration="5387000" />
       <workItem from="1603749808927" duration="1537000" />
+      <workItem from="1604323678081" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="spring data projects initial commit">
       <created>1582287970428</created>
