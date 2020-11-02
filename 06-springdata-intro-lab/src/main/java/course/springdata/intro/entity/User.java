@@ -12,15 +12,11 @@ import java.util.Set;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @EqualsAndHashCode.Include
-    private Long id;
+public class User extends BaseEntity {
 
+    @NonNull
     private String username;
-
+    @NonNull
     private int age;
 
     @OneToMany(mappedBy = "user")
