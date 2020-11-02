@@ -12,7 +12,12 @@ import java.util.Set;
 @NoArgsConstructor
 @RequiredArgsConstructor
 @AllArgsConstructor
-public class User extends BaseEntity {
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @EqualsAndHashCode.Include
+    private Long id;
 
     @NonNull
     private String username;
