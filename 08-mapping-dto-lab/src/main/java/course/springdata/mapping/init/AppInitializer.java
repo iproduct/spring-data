@@ -58,15 +58,15 @@ public class AppInitializer implements CommandLineRunner {
                         addresses.get(0)),
                 new Employee("Stephen", "Petrov", 2760, LocalDate.of(1974, 5, 19),
                         addresses.get(1)),
-                new Employee("Hristina", "Petrova", 3680, LocalDate.of(1989, 11, 9),
+                new Employee("Hristina", "Petrova", 3680, LocalDate.of(1991, 11, 9),
                         addresses.get(1)),
                 new Employee("Diana", "Atanasova", 6790, LocalDate.of(1989, 12, 9),
                         addresses.get(2)),
                 new Employee("Samuil", "Georgiev", 4780, LocalDate.of(1979, 2, 10),
                         addresses.get(3)),
-                new Employee("Slavi", "Petrov", 3780, LocalDate.of(1985, 2, 23),
+                new Employee("Slavi", "Hristov", 3780, LocalDate.of(1985, 2, 23),
                         addresses.get(4)),
-                new Employee("Georgi", "Petrov", 3960, LocalDate.of(1982, 3, 11),
+                new Employee("Georgi", "Miladinov", 3960, LocalDate.of(1995, 3, 11),
                         addresses.get(5))
         );
         List<Employee> created = employees.stream().map(employeeService::addEmployee).collect(Collectors.toList());
