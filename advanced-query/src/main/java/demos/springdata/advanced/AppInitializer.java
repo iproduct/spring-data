@@ -7,6 +7,7 @@ import demos.springdata.advanced.entity.Ingredient;
 import demos.springdata.advanced.entity.Label;
 import demos.springdata.advanced.entity.Shampoo;
 import demos.springdata.advanced.entity.Size;
+import org.hibernate.sql.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -36,51 +37,51 @@ public class AppInitializer implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        //1. Shampoos by size
-//        shampooRepo.findBySize(MEDIUM)
-//                .forEach(s -> System.out.printf("%s %s %s %.2f%n",
-//                        s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice()));
+//        1. Shampoos by size
+        shampooRepo.findBySize(MEDIUM)
+                .forEach(s -> System.out.printf("%s %s %s %.2f%n",
+                        s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice()));
 
-        //2. Shampoos by size or label ordered by price
-//        Label label = labelRepo.findOneById(10L);
-//        shampooRepo.findBySizeOrLabelOrderByPrice(MEDIUM, label)
-//                .forEach(s -> System.out.printf("%s %s %s %.2f%n",
-//                        s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice()));
+//        2. Shampoos by size or label ordered by price
+        Label label = labelRepo.findOneById(10L);
+        shampooRepo.findBySizeOrLabelOrderByPrice(MEDIUM, label)
+                .forEach(s -> System.out.printf("%s %s %s %.2f%n",
+                        s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice()));
 
-        //3. Shampoos priced greater then, ordered by price descending
-//        shampooRepo.findByPriceGreaterThanOrderByPriceDesc(7)
-//                .forEach(s -> System.out.printf("%s %s %s %.2f%n",
-//                        s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice()));
+//        3. Shampoos priced greater then, ordered by price descending
+        shampooRepo.findByPriceGreaterThanOrderByPriceDesc(7)
+                .forEach(s -> System.out.printf("%s %s %s %.2f%n",
+                        s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice()));
 
-        //4. Shampoos with ingredients in list
-//        shampooRepo.findWithIngredientsInList(
-//                List.of(ingredientRepo.findByName("Berry"), ingredientRepo.findByName("Mineral-Collagen")))
-//                .forEach(s -> System.out.printf("%s %s %s %.2f %s%n",
-//                    s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice(),
-//                    s.getIngredients().stream().map(Ingredient::getName).collect(Collectors.toList())));
+//        4. Shampoos with ingredients in list
+        shampooRepo.findWithIngredientsInList(
+                List.of(ingredientRepo.findByName("Berry"), ingredientRepo.findByName("Mineral-Collagen")))
+                .forEach(s -> System.out.printf("%s %s %s %.2f %s%n",
+                    s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice(),
+                    s.getIngredients().stream().map(Ingredient::getName).collect(Collectors.toList())));
 
-        //5. Ingredients by names in list
-//        ingredientRepo.findByNameInOrderByPrice(List.of("Lavender", "Herbs", "Apple"))
-//                .forEach(i -> System.out.printf("%s %s %.2f%n",
-//                        i.getId(), i.getName(), i.getPrice()));
+//        5. Ingredients by names in list
+        ingredientRepo.findByNameInOrderByPrice(List.of("Lavender", "Herbs", "Apple"))
+                .forEach(i -> System.out.printf("%s %s %.2f%n",
+                        i.getId(), i.getName(), i.getPrice()));
 
 
-        //6. Shampoos with ingredients in list
-//        shampooRepo.findByCountOfIngredientsLowerThan(2)
-//            .forEach(s -> System.out.printf("%s %s %s %.2f %s%n",
-//                s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice(),
-//                s.getIngredients().stream().map(Ingredient::getName).collect(Collectors.toList())));
+//        6. Shampoos with ingredients in list
+        shampooRepo.findByCountOfIngredientsLowerThan(2)
+            .forEach(s -> System.out.printf("%s %s %s %.2f %s%n",
+                s.getBrand(), s.getSize(), s.getLabel().getTitle(), s.getPrice(),
+                s.getIngredients().stream().map(Ingredient::getName).collect(Collectors.toList())));
 
-    //7. Update prices by 10 percent
-//        ingredientRepo.findByNameInOrderByPrice(List.of("Lavender", "Herbs", "Apple"))
-////                .forEach(i -> System.out.printf("%s %s %.2f%n",
-////                        i.getId(), i.getName(), i.getPrice()));
-////        System.out.println("-------- AFTER UPDATE -------");
-////        System.out.printf("Updated records: %d%n",
-////                ingredientRepo.updatePriceIngredientsInListBy10Percent(List.of("Lavender", "Herbs", "Apple")));
-////        ingredientRepo.findAll()
-////                .forEach(i -> System.out.printf("%s %s %.2f%n",
-////                        i.getId(), i.getName(), i.getPrice()));
+//    7. Update prices by 10 percent
+        ingredientRepo.findByNameInOrderByPrice(List.of("Lavender", "Herbs", "Apple"))
+                .forEach(i -> System.out.printf("%s %s %.2f%n",
+                        i.getId(), i.getName(), i.getPrice()));
+        System.out.println("-------- AFTER UPDATE -------");
+        System.out.printf("Updated records: %d%n",
+                ingredientRepo.updatePriceIngredientsInListBy10Percent(List.of("Lavender", "Herbs", "Apple")));
+        ingredientRepo.findAll()
+                .forEach(i -> System.out.printf("%s %s %.2f%n",
+                        i.getId(), i.getName(), i.getPrice()));
 
         //8. Print in pages of 5
         Page<Shampoo> page;

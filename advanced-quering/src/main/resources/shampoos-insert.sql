@@ -1,5 +1,5 @@
 USE shampoos;
-INSERT INTO labels(id, title, subtitle)
+INSERT INTO labels (id, title, subtitle)
 VALUES (1, 'Repair & Nutrition','For naturally beautiful hair from roots to tips!'),
 (2, 'Taming & Anti-Split Ends','For unruly hair with split ends.'),
 (3, 'Volume & Fullness','Flat & thin hair.'),
@@ -12,7 +12,7 @@ VALUES (1, 'Repair & Nutrition','For naturally beautiful hair from roots to tips
 (10, 'Power Volume','Fine & flat hair'),
 (11, 'Anti-Dandruff','Quickly greasing & flaky hair');
 
-INSERT INTO ingredients(id, name, price)
+INSERT INTO ingredients (id, name, price)
 VALUES (1, 'Apple', '0.50'),
 (2, 'Nettle', '0.70'),
 (3, 'Macadamia Oil', '1.00'),
@@ -28,7 +28,7 @@ VALUES (1, 'Apple', '0.50'),
 (13, 'Micro-Crystals', '0.90'),
 (14, 'Active-Caffeine', '1.20');
 
-INSERT INTO shampoos(id, brand, price, size, label_id)
+INSERT INTO shampoos (id, brand, price, size, label_id)
 VALUES (1, 'Swiss Green Apple & Nettle', '3.50', '0', 4),
 (2, 'Moroccan Argan Oil & Macadamia', '5.50', '0', 9),
 (3, 'Nature Moments Mediterranean Olive Oil & Aloe Vera', '6.50', '1', 3),
@@ -55,29 +55,29 @@ VALUES (1, 'Swiss Green Apple & Nettle', '3.50', '0', 4),
 (24, 'Superfruit Nutrition', '13.80', '2', 5),
 (25, 'Cotton Fresh', '13.60', '2', 2);
 
-INSERT INTO shampoos_ingredients(shampoo_id, ingredient_id) VALUES
-(1, 1), (1, 2), 
+INSERT INTO shampoos_ingredients (shampoo_id, ingredient_id) VALUES
+(1, 1), (1, 2),
 (2, 3),
-(3, 11), (3, 5), 
-(4, 11), (3, 6), 
-(5, 4), (5, 7), 
-(6, 4), (6, 7), 
-(7, 8), (7, 9), (7, 10), 
-(8, 3), (8, 7), 
-(9, 12), (9, 8), 
+(3, 11), (3, 5),
+(4, 11), (3, 6),
+(5, 4), (5, 7),
+(6, 4), (6, 7),
+(7, 8), (7, 9), (7, 10),
+(8, 3), (8, 7),
+(9, 12), (9, 8),
 (10, 6),
-(11, 13), (11, 10), 
-(12, 4), (12, 10), (12, 9), 
-(13, 11), (13, 3), 
+(11, 13), (11, 10),
+(12, 4), (12, 10), (12, 9),
+(13, 11), (13, 3),
 (14, 1), (14, 10), (14, 9),
-(15, 4), (15, 5), 
-(16, 13), (16, 4), 
+(15, 4), (15, 5),
+(16, 13), (16, 4),
 (17, 13),
 (18, 11), (18, 6),
-(19, 4), (19, 7), 
-(20, 4), (20, 7), 
-(21, 8), (21, 9), (21, 10), 
-(22, 4), (22, 10), (22, 9), 
-(23, 11), (23, 3), 
+(19, 4), (19, 7),
+(20, 4), (20, 7),
+(21, 8), (21, 9), (21, 10),
+(22, 4), (22, 10), (22, 9),
+(23, 11), (23, 3),
 (24, 1), (24, 10), (24, 9),
 (25, 4), (25, 5);

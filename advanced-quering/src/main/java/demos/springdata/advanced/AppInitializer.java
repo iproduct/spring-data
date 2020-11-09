@@ -32,39 +32,39 @@ public class AppInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        Page<Shampoo> page = this.shampooRepo.findAll(PageRequest.of(0, 5));
-//        System.out.printf("Page %d of %d%n-------------------%n", page.getNumber(), page.getTotalPages());
-//        page.forEach(s -> System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice()));
-//        while(page.hasNext()) {
-//            page = this.shampooRepo.findAll(page.nextPageable());
-//            System.out.printf("Page %d of %d%n-------------------%n", page.getNumber(), page.getTotalPages());
-//            page.forEach(s -> System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice()));
-//        }
+        Page<Shampoo> page = this.shampooRepo.findAll(PageRequest.of(0, 5));
+        System.out.printf("Page %d of %d%n-------------------%n", page.getNumber(), page.getTotalPages());
+        page.forEach(s -> System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice()));
+        while(page.hasNext()) {
+            page = this.shampooRepo.findAll(page.nextPageable());
+            System.out.printf("Page %d of %d%n-------------------%n", page.getNumber(), page.getTotalPages());
+            page.forEach(s -> System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice()));
+        }
 
 //        1.	Select Shampoos by Size
-//        this.shampooRepo.findBySize(Size.MEDIUM)
-//            .forEach(s -> {
-//                System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice());
-//            });
+        this.shampooRepo.findBySize(Size.MEDIUM)
+            .forEach(s -> {
+                System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice());
+            });
         //2.	Select Shampoos by Size or Label
-//        Label label = this.labelRepo.findOneById(10L);
-//        this.shampooRepo
-//                .findAllBySizeOrLabelOrderByPrice(Size.MEDIUM, label)
-//                .forEach(s -> {
-//                    System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice());
-//                });
+        Label label = this.labelRepo.findOneById(10L);
+        this.shampooRepo
+                .findAllBySizeOrLabelOrderByPrice(Size.MEDIUM, label)
+                .forEach(s -> {
+                    System.out.printf("%s %s %s%n", s.getBrand(), s.getSize(), s.getPrice());
+                });
 
         //3.	Select Shampoos by Price
-//        this.shampooRepo.findAllByPriceGreaterThanOrderByPriceDesc(7)
-//            .forEach(s -> {
-//                System.out.printf("%s %s %s%n", s.getBrand(),s.getSize(), s.getPrice());
-//            });
+        this.shampooRepo.findAllByPriceGreaterThanOrderByPriceDesc(7)
+            .forEach(s -> {
+                System.out.printf("%s %s %s%n", s.getBrand(),s.getSize(), s.getPrice());
+            });
 
         //4.	Select Ingredients by Name
-//        this.ingredientRepo.findAllByNameStartingWith("M")
-//                .forEach(i->{
-//                    System.out.printf("%s%n", i.getName());
-//                });
+        this.ingredientRepo.findAllByNameStartingWith("M")
+                .forEach(i->{
+                    System.out.printf("%s%n", i.getName());
+                });
 
         //5.	Select Ingredients by Names
         List<String> list = new ArrayList<>(){{
@@ -77,18 +77,18 @@ public class AppInitializer implements CommandLineRunner {
                     System.out.printf("%s%n", i.getName());
                 });
         //6.	Count Shampoos by Price
-        //System.out.println(this.shampooService.countOfShampooUnderPrice(new BigDecimal("8.5")));
+        System.out.println(this.shampooRepo.countOfShampooUnderPrice(new BigDecimal("8.5")));
 
         //JPQL Part
 //        7.	Select Shampoos by Ingredients
-//        this.shampooRepo.findAllWithIngredientsInList(
-//                List.of(ingredientRepo.findByName("Berry"), ingredientRepo.findByName("Mineral-Collagen")))
-//            .forEach(x-> System.out.printf("%s%n", x.getBrand()));
+        this.shampooRepo.findAllWithIngredientsInList(
+                List.of(ingredientRepo.findByName("Berry"), ingredientRepo.findByName("Mineral-Collagen")))
+            .forEach(x-> System.out.printf("%s%n", x.getBrand()));
 
         //8.	Select Shampoos by Ingredients Count
-//        this.shampooService.findAllWithCountOfIngredientsLowerThan(2)
-//                .forEach(x-> System.out.printf("%s%n", x.getBrand()));
+        this.shampooRepo.findAllWithCountOfIngredientsLowerThan(2)
+                .forEach(x-> System.out.printf("%s%n", x.getBrand()));
 
-        //
+
     }
 }
