@@ -6,6 +6,7 @@ import course.springdata.mapping.entity.Address;
 import course.springdata.mapping.entity.Employee;
 import course.springdata.mapping.service.AddressService;
 import course.springdata.mapping.service.EmployeeService;
+import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeMap;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -97,9 +98,13 @@ public class AppInitializer implements CommandLineRunner {
         managerDtos.forEach(System.out::println);
 
         // 3. Employees born after 1990 with manager last name
-        TypeMap employeeMap2 = mapper.getTypeMap(Employee.class, EmployeeDto.class).addMapping(
-                src -> src.getManager().getLastName(), EmployeeDto::setManagerLastName
-        );
+        Converter<String, String> converterNoManager = ctx -> ctx.getSource() == null ? "No manager" : ctx.getSource();
+
+        TypeMap employeeMap2 = mapper.getTypeMap(Employee.class, EmployeeDto.class)
+                .addMappings(m -> m.using(converterNoManager)
+                        .map(src -> src.getManager().getLastName(), EmployeeDto::setManagerLastName));
+
+
 
         System.out.println("-".repeat(80) + "\n");
         List<Employee> employeesBefore1990 = employeeService.getAllEmployeesBornBefore(LocalDate.of(1990, 1, 1));
