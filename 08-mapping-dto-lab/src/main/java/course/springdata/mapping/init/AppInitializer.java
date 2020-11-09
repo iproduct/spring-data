@@ -98,7 +98,7 @@ public class AppInitializer implements CommandLineRunner {
         managerDtos.forEach(System.out::println);
 
         // 3. Employees born after 1990 with manager last name
-        Converter<String, String> converterNoManager = ctx -> ctx.getSource() == null ? "No manager" : ctx.getSource();
+        Converter<String, String> converterNoManager = ctx -> ctx.getSource() == null ? "[No manager]" : ctx.getSource();
 
         TypeMap employeeMap2 = mapper.getTypeMap(Employee.class, EmployeeDto.class)
                 .addMappings(m -> m.using(converterNoManager)
