@@ -63,7 +63,7 @@ public class AppInitializer implements CommandLineRunner {
                         addresses.get(2)),
                 new Employee("Samuil", "Georgiev", 4780, LocalDate.of(1979, 2, 10),
                         addresses.get(3)),
-                new Employee("Ivan", "Petrov", 3780, LocalDate.of(1985, 2, 23),
+                new Employee("Slavi", "Petrov", 3780, LocalDate.of(1985, 2, 23),
                         addresses.get(4)),
                 new Employee("Georgi", "Petrov", 3960, LocalDate.of(1982, 3, 11),
                         addresses.get(5))
@@ -95,5 +95,15 @@ public class AppInitializer implements CommandLineRunner {
         List<Employee> managers = employeeService.getAllManagers();
         List<ManagerDto> managerDtos = managers.stream().map(managerTypeMap::map).collect(Collectors.toList());
         managerDtos.forEach(System.out::println);
+
+        // 3. Employees born after 1990 with manager last name
+        TypeMap employeeMap2 = mapper.getTypeMap(Employee.class, EmployeeDto.class).addMapping(
+                src -> src.getManager().getLastName(), EmployeeDto::setManagerLastName
+        );
+
+        System.out.println("-".repeat(80) + "\n");
+        List<Employee> employeesBefore1990 = employeeService.getAllEmployeesBornBefore(LocalDate.of(1990, 1, 1));
+//        employeesBefore1990.forEach(System.out::println);
+        employeesBefore1990.stream().map(employeeMap2::map).forEach(System.out::println);
     }
 }
