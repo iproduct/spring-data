@@ -13,9 +13,9 @@ public class ManagerDto {
     private Long id;
     private String firstName;
     private String lastName;
-    private List<EmployeeDto> subordinates;
+    private List<EmployeeDto> employees;
 
     private int getSubordinatesNumber() { // Derived property
-        return subordinates.size();
+        return employees.size();
     }
 }
