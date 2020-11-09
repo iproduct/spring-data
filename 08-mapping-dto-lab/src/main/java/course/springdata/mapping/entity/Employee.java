@@ -34,6 +34,7 @@ public class Employee {
     @JoinColumn(name = "manager_id", referencedColumnName = "id")
     private Employee manager;
 
-    @OneToMany(mappedBy = "manager")
+    @OneToMany(mappedBy = "manager", fetch = FetchType.EAGER)
+    @ToString.Exclude
     private List<Employee> subordinates = new ArrayList<>();
 }

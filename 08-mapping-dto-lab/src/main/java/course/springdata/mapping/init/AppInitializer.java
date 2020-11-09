@@ -1,11 +1,13 @@
 package course.springdata.mapping.init;
 
 import course.springdata.mapping.dto.EmployeeDto;
+import course.springdata.mapping.dto.ManagerDto;
 import course.springdata.mapping.entity.Address;
 import course.springdata.mapping.entity.Employee;
 import course.springdata.mapping.service.AddressService;
 import course.springdata.mapping.service.EmployeeService;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -68,5 +70,30 @@ public class AppInitializer implements CommandLineRunner {
         );
         List<Employee> created = employees.stream().map(employeeService::addEmployee).collect(Collectors.toList());
 
+        // Add managers and update emplyees
+        created.get(1).setManager(created.get(0));
+        created.get(2).setManager(created.get(0));
+
+        created.get(4).setManager(created.get(3));
+        created.get(5).setManager(created.get(3));
+        created.get(6).setManager(created.get(3));
+
+        List<Employee> updated = created.stream().map(employeeService::updateEmployee).collect(Collectors.toList());
+
+        // Fetch all managers and map them to ManagerDto
+        TypeMap<Employee, ManagerDto> managerTypeMap = mapper.createTypeMap(Employee.class, ManagerDto.class)
+                .addMappings(m -> {
+                    m.map( Employee::getSubordinates, ManagerDto::setEmployees);
+                    m.map( src -> src.getAddress().getCity(), ManagerDto::setCity);
+//                    m.skip(ManagerDto::setCity);
+                });
+        mapper.getTypeMap(Employee.class, EmployeeDto.class).addMapping(
+                src -> src.getAddress().getCity(), EmployeeDto::setCity
+        );
+        mapper.validate();
+
+        List<Employee> managers = employeeService.getAllManagers();
+        List<ManagerDto> managerDtos = managers.stream().map(managerTypeMap::map).collect(Collectors.toList());
+        managerDtos.forEach(System.out::println);
     }
 }

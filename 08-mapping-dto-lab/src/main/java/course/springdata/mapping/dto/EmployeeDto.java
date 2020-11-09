@@ -14,5 +14,17 @@ public class EmployeeDto {
     private String lastName;
     private double salary;
     private LocalDate birthday;
-    private String addressCity;
+    private String city;
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder();
+        sb.append("  - ").append(id);
+        sb.append(": ").append(firstName);
+        sb.append(" ").append(lastName);
+        sb.append(", salary: ").append(salary);
+//        sb.append(", birthday=").append(birthday);
+        sb.append(", City: ").append(city).append('\'');
+        return sb.toString();
+    }
 }

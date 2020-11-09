@@ -26,6 +26,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
+    public List<Employee> getAllManagers() {
+        return employeeRepo.getManagers();
+    }
+
+    @Override
     public Employee getEmployeeById(Long id) {
         return employeeRepo.findById(id).orElseThrow(
                 () -> new NonexistingEntityException(
