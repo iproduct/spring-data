@@ -12,10 +12,13 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.annotation.PostConstruct;
 import java.net.URI;
 
+@CrossOrigin(origins = "http://localhost:4000", maxAge = 3600)
 @RestController
 @RequestMapping("/api/simple")
 @Slf4j
@@ -46,8 +49,8 @@ public class SimplePostController {
         Post post = gson.fromJson(body, Post.class);
         log.info("Post deserialized: {}", post);
         Post created = postService.createPost(post);
-        URI uri = MvcUriComponentsBuilder
-                .fromMethodName(SimplePostController.class,"addPost", post)
+        URI uri = ServletUriComponentsBuilder
+                .fromCurrentRequest()
                 .pathSegment("{id}").buildAndExpand(created.getId()).toUri();
         return ResponseEntity.created(uri).body(gson.toJson(created));
     }

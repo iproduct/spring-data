@@ -12,6 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBui
 import java.net.URI;
 import java.util.Collection;
 
+@CrossOrigin(origins = "http://localhost:4000", maxAge = 3600)
 @RestController
 @RequestMapping("/api/users")
 @Slf4j
@@ -38,7 +39,7 @@ public class UserController {
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
         User created = service.createUser(user);
-        URI location = MvcUriComponentsBuilder.fromMethodName(UserController.class, "createUser", User.class)
+        URI location = MvcUriComponentsBuilder.fromMethodName(UserController.class, "createUser", user)
                 .pathSegment("{id}").buildAndExpand(created.getId()).toUri() ;
         log.info("User created: {}", location);
         return ResponseEntity.created(location).body(created);

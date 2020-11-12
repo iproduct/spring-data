@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7352ef96-668d-4144-87fd-4522f7749f2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/java/demos/springdata/restdemo/util/JwtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-final/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/gson/PostGsonDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/web/GsonUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Views.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/entity/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/init/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/init/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/web/GsonPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/web/GsonPostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlogAPI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlogAPI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,19 +60,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="D:\CourseSpringData\git\spring-data\rest-demo-jsclient\.idea" />
-      </set>
-    </option>
+  <component name="KotlinMultiplatform">
+    <executables />
   </component>
   <component name="ProjectId" id="1YtjjoY6mNLX3kYjSmCy67eZjh2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -70,6 +82,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.23772103" />
@@ -83,6 +96,17 @@
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,6 +128,7 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -119,20 +144,21 @@
       <workItem from="1584615859511" duration="107000" />
       <workItem from="1584616112365" duration="21436000" />
       <workItem from="1590067225638" duration="2965000" />
+      <workItem from="1605197111027" duration="2410000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="641" y="272" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584617237346">
+    <state x="588" y="243" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605197972363">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="641" y="272" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1707.920@0.0.1707.920" timestamp="1584617237346" />
-    <state x="520" y="195" width="667" height="530" key="find.popup" timestamp="1584616308966">
+    <state x="588" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1707.920@0.0.1707.920" timestamp="1605197972363" />
+    <state x="441" y="42" key="new project wizard" timestamp="1605202506536">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="520" y="195" width="667" height="530" key="find.popup/0.0.1707.920@0.0.1707.920" timestamp="1584616308966" />
+    <state x="441" y="42" key="new project wizard/0.0.1707.920@0.0.1707.920" timestamp="1605202506536" />
   </component>
 </project>

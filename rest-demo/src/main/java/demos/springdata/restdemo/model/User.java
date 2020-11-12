@@ -2,6 +2,7 @@ package demos.springdata.restdemo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.google.gson.annotations.Expose;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
@@ -25,17 +26,20 @@ public class User {
     public static final String ROLE_USER = "ROLE_USER";
     public static final String ROLE_ADMIN = "ROLE_ADMIN";
 
+    @JsonView(Views.Post.class)
     @Expose
     @Id
     @GeneratedValue(strategy = IDENTITY)
     @EqualsAndHashCode.Include
     private Long id;
 
+    @JsonView(Views.Post.class)
     @Expose
     @NonNull
     @Length(min = 2, max = 60)
     private String firstName;
 
+    @JsonView(Views.Post.class)
     @Expose
     @NonNull
     @Length(min = 2, max = 60)
@@ -52,7 +56,7 @@ public class User {
     @Expose(serialize = false)
     @NonNull
     @Length(min = 4, max = 80)
-    @Column(unique = true, nullable = false)
+    @Column(nullable = false)
     @NotNull
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
@@ -62,17 +66,19 @@ public class User {
     @NotNull
     private String roles;
 
-    private boolean active = true;
-
+    @JsonView(Views.Post.class)
     @Expose
+    @NonNull
     @Length(min=8, max=512)
     @URL
     private String imageUrl;
 
+    private boolean active = true;
 
     @OneToMany(mappedBy = "author")
     @ToString.Exclude
     @JsonIgnore
+    @Expose(serialize = false, deserialize = false)
     private Collection<Post> posts = new ArrayList<Post>();
 
     @Expose

@@ -33,8 +33,10 @@ public class DataInitializer implements CommandLineRunner {
                     "https://www.publicdomainpictures.net/pictures/20000/velka/baby-lamb.jpg")
     );
     private static final List<User> SAMPLE_USERS = List.of(
-            new User("Default", "Admin", "admin", "admin", ROLE_ADMIN),
-            new User("Ivan", "Pertov", "ivan", "ivan", ROLE_USER)
+            new User("Default", "Admin", "admin", "admin", ROLE_ADMIN,
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Crystal_Clear_kdm_user_female.svg/500px-Crystal_Clear_kdm_user_female.svg.png"),
+            new User("Ivan", "Pertov", "ivan", "ivan", ROLE_USER,
+                    "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Crystal_Clear_app_Login_Manager.svg/500px-Crystal_Clear_app_Login_Manager.svg.png")
     );
     @Override
     public void run(String... args) throws Exception {

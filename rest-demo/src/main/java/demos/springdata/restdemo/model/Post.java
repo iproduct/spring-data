@@ -1,6 +1,7 @@
 package demos.springdata.restdemo.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonView;
 import com.google.gson.annotations.Expose;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;
@@ -18,6 +19,7 @@ import static javax.persistence.GenerationType.IDENTITY;
 @RequiredArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@JsonView(Views.Post.class)
 public class Post {
     @Expose
     @Id
