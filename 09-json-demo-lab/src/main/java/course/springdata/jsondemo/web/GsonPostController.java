@@ -30,11 +30,16 @@ public class GsonPostController {
         return gson.toJson(postService.getAllPosts());
     }
 
+    @GetMapping("/{id}")
+    public String getPosts(@PathVariable("id") Long id) {
+        return gson.toJson(postService.getPostById(id));
+    }
+
     @PostMapping
     public ResponseEntity<String> addPost(@RequestBody String body) {
         log.info("Body received: {}", body);
         Post post = gson.fromJson(body, Post.class);
-        log.info("Post: {}", post);
+        log.info("Post deserialized: {}", post);
         Post created = postService.addPost(post);
         return ResponseEntity.created(
                 ServletUriComponentsBuilder.fromCurrentRequest()

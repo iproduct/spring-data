@@ -49,9 +49,9 @@ public class Post {
     @Length(min=3, max=80, message = "Author is required property (between 3 and 80 characters)")
     private String author;
 
-//    @Expose
+    @Expose
     private LocalDateTime created = LocalDateTime.now();
-//    @Expose
+    @Expose
     private LocalDateTime modified = LocalDateTime.now();
 
 }
