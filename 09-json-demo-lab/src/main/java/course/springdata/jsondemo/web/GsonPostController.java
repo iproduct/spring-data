@@ -25,17 +25,17 @@ public class GsonPostController {
                 .setPrettyPrinting()
                 .create();
 
-    @GetMapping
+    @GetMapping(produces = "application/json")
     public String getPosts() {
         return gson.toJson(postService.getAllPosts());
     }
 
-    @GetMapping("/{id}")
+    @GetMapping(path = "/{id}", produces = "application/json")
     public String getPosts(@PathVariable("id") Long id) {
         return gson.toJson(postService.getPostById(id));
     }
 
-    @PostMapping
+    @PostMapping(produces = "application/json")
     public ResponseEntity<String> addPost(@RequestBody String body) {
         log.info("Body received: {}", body);
         Post post = gson.fromJson(body, Post.class);
