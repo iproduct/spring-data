@@ -4,9 +4,11 @@ import course.springdata.jsondemo.entity.Post;
 import course.springdata.jsondemo.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class DataInitializer implements CommandLineRunner {
     private static final List<Post> SAMPLE_POSTS = List.of(
             new Post("Welcome to Spring Data", "Developing data access object with Spring Data is easy ...",
@@ -36,7 +38,6 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
-//        postService.addPost()
+        SAMPLE_POSTS.forEach(postService::addPost);
     }
 }
