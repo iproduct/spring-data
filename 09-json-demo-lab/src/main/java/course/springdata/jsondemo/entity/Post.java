@@ -6,10 +6,7 @@ import lombok.*;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.URL;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -44,10 +41,14 @@ public class Post {
     private String imageUrl;
 
     @Expose
+    @ManyToOne
+    private User author;
+
+    @Expose(serialize = false)
     @NonNull
     @NotNull
     @Length(min=3, max=80, message = "Author is required property (between 3 and 80 characters)")
-    private String author;
+    private Long authorId;
 
     @Expose
     private LocalDateTime created = LocalDateTime.now();

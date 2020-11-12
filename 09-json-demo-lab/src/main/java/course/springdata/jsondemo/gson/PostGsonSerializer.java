@@ -19,7 +19,8 @@ public class PostGsonSerializer implements JsonSerializer<Post> {
         postJsonObj.addProperty("id", post.getId());
         postJsonObj.addProperty("title", post.getTitle());
         postJsonObj.addProperty("content", post.getContent());
-        postJsonObj.addProperty("author", post.getAuthor());
+        postJsonObj.addProperty("author", post.getAuthor().getFirstName()
+        + " " + post.getAuthor().getLastName());
         postJsonObj.addProperty("imageUrl", post.getImageUrl());
         postJsonObj.addProperty("created", post.getCreated().format(format));
         postJsonObj.addProperty("modified", post.getModified().format(format));

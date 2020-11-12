@@ -53,7 +53,7 @@ public class User {
     @NonNull
     @NotNull
     @Enumerated(EnumType.STRING)
-    private String role = USER;
+    private Role role;
 
     @Expose
     @NonNull
