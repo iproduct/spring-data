@@ -5,11 +5,13 @@ import course.springdata.jsondemo.entity.Post;
 import course.springdata.jsondemo.exception.NonexisitingEntityException;
 import course.springdata.jsondemo.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Transactional(readOnly = true)
+@Service
 public class PostServiceImpl implements PostService {
     private PostRepository postRepo;
 
