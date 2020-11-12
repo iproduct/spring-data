@@ -3,6 +3,7 @@ package course.springdata.jsondemo.init;
 import course.springdata.jsondemo.entity.Post;
 import course.springdata.jsondemo.entity.User;
 import course.springdata.jsondemo.service.PostService;
+import course.springdata.jsondemo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -31,17 +32,20 @@ public class DataInitializer implements CommandLineRunner {
     private static final List<User> SAMPLE_USERS = List.of(
             new User("Default", "Admin", "admin", "admin", ADMIN,
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Crystal_Clear_kdm_user_female.svg/500px-Crystal_Clear_kdm_user_female.svg.png"),
-            new User("Ivan", "Pertov", "ivan", "ivan", USER,
+            new User("Ivan", "Pertov", "ivan", "ivan123", USER,
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Crystal_Clear_app_Login_Manager.svg/500px-Crystal_Clear_app_Login_Manager.svg.png")
     );
 
     @Autowired
     private PostService postService;
+    @Autowired
+    private UserService userService;
 
 
 
     @Override
     public void run(String... args) throws Exception {
+        SAMPLE_USERS.forEach(userService::addUser);
         SAMPLE_POSTS.forEach(postService::addPost);
     }
 }

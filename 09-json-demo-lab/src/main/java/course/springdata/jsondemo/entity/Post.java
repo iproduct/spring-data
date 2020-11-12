@@ -47,7 +47,7 @@ public class Post {
     @Expose(serialize = false)
     @NonNull
     @NotNull
-    @Length(min=3, max=80, message = "Author is required property (between 3 and 80 characters)")
+    @Transient
     private Long authorId;
 
     @Expose
