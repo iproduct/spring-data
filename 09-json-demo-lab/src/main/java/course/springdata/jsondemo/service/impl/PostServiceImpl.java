@@ -1,39 +1,58 @@
 package course.springdata.jsondemo.service.impl;
 
+import course.springdata.jsondemo.dao.PostRepository;
 import course.springdata.jsondemo.entity.Post;
+import course.springdata.jsondemo.exception.NonexisitingEntityException;
 import course.springdata.jsondemo.service.PostService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Transactional(readOnly = true)
 public class PostServiceImpl implements PostService {
+    private PostRepository postRepo;
+
+    @Autowired
+    public PostServiceImpl(PostRepository postRepo) {
+        this.postRepo = postRepo;
+    }
 
     @Override
     public List<Post> getAllPosts() {
-        return null;
+        return postRepo.findAll();
     }
 
     @Override
     public Post getPostById(Long id) {
-        return null;
+        return postRepo.findById(id).orElseThrow(() ->
+            new NonexisitingEntityException(String.format("Post with ID=%s does not exist.", id)));
     }
 
+    @Transactional
     @Override
     public Post addPost(Post post) {
-        return null;
+        post.setId(null);
+        return postRepo.save(post);
     }
 
+    @Transactional
     @Override
     public Post updatePost(Post post) {
-        return null;
+        getPostById(post.getId());
+        return postRepo.save(post);
     }
 
+    @Transactional
     @Override
     public Post deletePost(Long id) {
-        return null;
+        Post removed = getPostById(id);
+        postRepo.deleteById(id);
+        return removed;
     }
 
     @Override
     public long getPostsCount() {
-        return 0;
+        return postRepo.count();
     }
 }
