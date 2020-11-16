@@ -42,8 +42,8 @@ public class Main {
             marshaller.marshal(persons.get(0), new File("person.xml"));
 //            marshaller.marshal(persons.get(0), System.out);
             //4. Marshal multiple persons to persons.xml
-//            marshaller.marshal(new Persons(persons), new File("persons.xml"));
-//            StringWriter out  = new StringWriter();
+            marshaller.marshal(new Persons(persons), new File("persons.xml"));
+            StringWriter out  = new StringWriter();
 //            marshaller.marshal(new Persons(persons), out);
 //            System.out.printf("StringWriter: %s%n", out.toString());
 
