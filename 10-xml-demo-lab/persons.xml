@@ -4,16 +4,15 @@
         <firstName>Petar</firstName>
         <lastName>Petrov</lastName>
         <address id="1">
-            <country>Bulgaria</country>
             <city>Sofia</city>
             <street>bul. Tzar Osvoboditel, 50</street>
         </address>
         <phoneNumbers>
-            <phone id="2">
-                <number>+359 2 9731425</number>
-            </phone>
             <phone id="1">
                 <number>+359 885 123456</number>
+            </phone>
+            <phone id="2">
+                <number>+359 2 9731425</number>
             </phone>
         </phoneNumbers>
     </person>
@@ -26,11 +25,11 @@
             <street>ul. Gladston, 17</street>
         </address>
         <phoneNumbers>
+            <phone2 id="3">
+                <number>+359 887 456677</number>
+            </phone2>
             <phone id="4">
                 <number>+359 32 654237</number>
-            </phone>
-            <phone id="3">
-                <number>+359 887 456677</number>
             </phone>
         </phoneNumbers>
     </person>
@@ -43,11 +42,11 @@
             <street>bul. Tzar Osvoboditel, 50</street>
         </address>
         <phoneNumbers>
-            <phone id="6">
-                <number>+359 2 9731425</number>
-            </phone>
             <phone id="5">
                 <number>+359 889 567895</number>
+            </phone>
+            <phone id="6">
+                <number>+359 2 9731425</number>
             </phone>
         </phoneNumbers>
     </person>
