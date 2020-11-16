@@ -2,10 +2,7 @@ package course.springdata.xmldemo.model;
 
 import lombok.*;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -24,5 +21,7 @@ public class Person {
     private String lastName;
     @NonNull
     private Address address;
+    @XmlElementWrapper(name="phoneNumbers")
+    @XmlElement(name="phone")
     private Set<PhoneNumber> phoneNumbers = new HashSet<>();
 }
