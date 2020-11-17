@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pm="http://iproduct.org/course/springdata/xmldemo/model" elementFormDefault="qualified" targetNamespace="http://iproduct.org/course/springdata/xmldemo/model" version="1.0">
+        
+  
+  
+  <xs:element name="person" type="pm:person"/>
+        
+  
+  
+  <xs:element name="persons" type="pm:persons"/>
+        
+  
+  
+  <xs:complexType name="address">
+                
+    
+    
+    <xs:sequence>
+                        
+      
+      
+      <xs:element name="country" nillable="true" type="xs:string"/>
+                        
+      
+      
+      <xs:element name="city2" type="xs:string"/>
+                        
+      
+      
+      <xs:element minOccurs="0" name="street" type="xs:string"/>
+                      
+    
+    
+    </xs:sequence>
+                
+    
+    
+    <xs:attribute name="id" type="xs:long" use="required"/>
+              
+  
+  
+  </xs:complexType>
+        
+  
+  
+  <xs:complexType name="person">
+                
+    
+    
+    <xs:sequence>
+                        
+      
+      
+      <xs:element minOccurs="0" name="firstName" type="xs:string"/>
+                        
+      
+      
+      <xs:element minOccurs="0" name="lastName" type="xs:string"/>
+                        
+      
+      
+      <xs:element minOccurs="0" name="address" type="pm:address"/>
+                        
+      
+      
+      <xs:element minOccurs="0" name="phoneNumbers">
+                                
+        
+        
+        <xs:complexType>
+                                        
+          
+          
+          <xs:sequence>
+                                                
+            
+            
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="phone" type="pm:phoneNumber"/>
+                                              
+          
+          
+          </xs:sequence>
+                                      
+        
+        
+        </xs:complexType>
+                              
+      
+      
+      </xs:element>
+                      
+    
+    
+    </xs:sequence>
+                
+    
+    
+    <xs:attribute name="id" type="xs:long" use="required"/>
+              
+  
+  
+  </xs:complexType>
+        
+  
+  
+  <xs:complexType name="phoneNumber">
+                
+    
+    
+    <xs:sequence>
+                        
+      
+      
+      <xs:element minOccurs="0" name="number" type="xs:string"/>
+                      
+    
+    
+    </xs:sequence>
+                
+    
+    
+    <xs:attribute name="id" type="xs:long" use="required"/>
+              
+  
+  
+  </xs:complexType>
+        
+  
+  
+  <xs:complexType name="persons">
+                
+    
+    
+    <xs:sequence>
+                        
+      
+      
+      <xs:element maxOccurs="unbounded" minOccurs="0" ref="pm:person"/>
+                      
+    
+    
+    </xs:sequence>
+              
+  
+  
+  </xs:complexType>
+      
+
+
+</xs:schema>

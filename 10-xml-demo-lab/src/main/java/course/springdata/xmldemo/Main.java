@@ -35,24 +35,28 @@ public class Main {
         // 1. Create JAXBContext
         try {
             JAXBContext ctx = JAXBContext.newInstance(Person.class, Persons.class);
+
             //2. Create Marshaller
             Marshaller marshaller = ctx.createMarshaller();
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            marshaller.setProperty(Marshaller.JAXB_ENCODING, "utf-8"); // Set custom encoding to the XML document
+
             //3. Marshal POJO to XML
             marshaller.marshal(persons.get(0), new File("person.xml"));
 //            marshaller.marshal(persons.get(0), System.out);
+
             //4. Marshal multiple persons to persons.xml
             marshaller.marshal(new Persons(persons), new File("persons.xml"));
-            StringWriter out  = new StringWriter();
+//            StringWriter out  = new StringWriter();
 //            marshaller.marshal(new Persons(persons), out);
 //            System.out.printf("StringWriter: %s%n", out.toString());
 
-            //5. Unmarshal multiple Persons from XML to Java
+            //5. Unmarshal multiple Persons from XML to Java: Create unmarshaller
             Unmarshaller unmarshaller = ctx.createUnmarshaller();
 
             //6. Set validation
             SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-            Schema schema = sf.newSchema(new File("persons.xsd"));
+            Schema schema = sf.newSchema(new File("xsd/persons.xsd"));
             unmarshaller.setSchema(schema);
             unmarshaller.setEventHandler(
                     (ValidationEvent ve) -> {
@@ -66,6 +70,8 @@ public class Main {
                         return true;
                     }
             );
+
+            //7. Unmarshall data to POJO
             Persons unmarshalled = (Persons) unmarshaller.unmarshal(new File("persons.xml"));
             unmarshalled.getPersons().forEach(p ->
                     System.out.printf("| %5d | %-15.15s | %-15.15s | %-40.40s | %-40.40s |%n",

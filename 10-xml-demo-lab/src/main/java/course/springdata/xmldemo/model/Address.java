@@ -13,7 +13,7 @@ public class Address {
     @XmlAttribute(required = true)
     private Long id;
     @NonNull
-    @XmlElement(required = true)
+    @XmlElement(required = true, nillable = true)
     private String country;
     @NonNull
     @XmlElement(required = true)

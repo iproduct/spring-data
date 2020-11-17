@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f0b7e69-7df3-41bc-84f4-c577ac4e32b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/persons.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xsd/META-INF/JAXB/episode_default-cli.xjb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/model/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xsd/persons.xsd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-demo/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-demo/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-demo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
@@ -23,7 +23,6 @@
       <change afterPath="$PROJECT_DIR$/../10-xml-simple/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-simple/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-simple/persons.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../10-xml-simple/persons.xsd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-simple/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-simple/src/main/java/course/springdata/xmlsimple/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../10-xml-simple/src/main/java/course/springdata/xmlsimple/model/Address.java" afterDir="false" />
@@ -40,10 +39,14 @@
       <change afterPath="$PROJECT_DIR$/../10-xml-simple/xsd/schema1.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../09-json-demo-lab/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person.xml" beforeDir="false" afterPath="$PROJECT_DIR$/person.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persons.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persons.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/person.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/persons.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/../10-xml-simple/persons.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/model/Persons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/model/Persons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/model/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/course/springdata/xmldemo/model/PhoneNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo-jsclient/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605553743953</updated>
-      <workItem from="1605553745477" duration="5875000" />
+      <workItem from="1605553745477" duration="13005000" />
     </task>
     <task id="LOCAL-00001" summary="pom configured">
       <created>1605555181721</created>
@@ -212,7 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605557293234</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="XML Schema Definition generated using maven plugin + unmarshalling validation">
+      <created>1605559683779</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605559683779</updated>
+    </task>
+    <task id="LOCAL-00008" summary="marshalling to persons.xml uncommented">
+      <created>1605559739857</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605559739857</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,40 +243,42 @@
     <MESSAGE value="single Person marshalling to XML" />
     <MESSAGE value="multiple Persons data prepared" />
     <MESSAGE value="multiple Persons data marshalled to XML" />
-    <option name="LAST_COMMIT_MESSAGE" value="multiple Persons data marshalled to XML" />
+    <MESSAGE value="XML Schema Definition generated using maven plugin + unmarshalling validation" />
+    <MESSAGE value="marshalling to persons.xml uncommented" />
+    <option name="LAST_COMMIT_MESSAGE" value="marshalling to persons.xml uncommented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="448" y="370" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605555049871">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="448" y="370" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1707.920@0.0.1707.920" timestamp="1605555049871" />
-    <state x="353" y="0" key="CommitChangelistDialog2" timestamp="1605557292465">
+    <state x="236" y="0" key="CommitChangelistDialog2" timestamp="1605559739135">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="353" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1605557292465" />
-    <state width="1651" height="517" key="GridCell.Tab.0.bottom" timestamp="1605559612668">
+    <state x="236" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1605559739135" />
+    <state width="1651" height="361" key="GridCell.Tab.0.bottom" timestamp="1605574349572">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="517" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605559612668" />
-    <state width="1651" height="517" key="GridCell.Tab.0.center" timestamp="1605559612668">
+    <state width="1651" height="361" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1605574349572" />
+    <state width="1651" height="361" key="GridCell.Tab.0.center" timestamp="1605574349572">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="517" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605559612668" />
-    <state width="1651" height="517" key="GridCell.Tab.0.left" timestamp="1605559612668">
+    <state width="1651" height="361" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1605574349572" />
+    <state width="1651" height="361" key="GridCell.Tab.0.left" timestamp="1605574349571">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="517" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605559612668" />
-    <state width="1651" height="517" key="GridCell.Tab.0.right" timestamp="1605559612668">
+    <state width="1651" height="361" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1605574349571" />
+    <state width="1651" height="361" key="GridCell.Tab.0.right" timestamp="1605574349572">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1651" height="517" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605559612668" />
+    <state width="1651" height="361" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1605574349572" />
     <state x="206" y="0" key="SettingsEditor" timestamp="1605556329150">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="206" y="0" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1605556329150" />
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1605557294716">
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1605559742372">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1605557294716" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1605559742372" />
   </component>
 </project>
