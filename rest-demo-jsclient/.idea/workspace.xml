@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7352ef96-668d-4144-87fd-4522f7749f2f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/gson/PostGsonDeserializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/web/GsonUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Views.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/entity/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/init/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/init/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/web/GsonPostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09-json-demo-lab/src/main/java/course/springdata/jsondemo/web/GsonPostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/init/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/SimplePostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/java/demos/springdata/restdemo/web/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../rest-demo/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,14 +39,24 @@
   <component name="KotlinMultiplatform">
     <executables />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1YtjjoY6mNLX3kYjSmCy67eZjh2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -144,18 +130,39 @@
       <workItem from="1584615859511" duration="107000" />
       <workItem from="1584616112365" duration="21436000" />
       <workItem from="1590067225638" duration="2965000" />
-      <workItem from="1605197111027" duration="2410000" />
+      <workItem from="1605197111027" duration="3146000" />
     </task>
+    <task id="LOCAL-00001" summary="rest-demo and rest-demo-jsclient commited">
+      <created>1605214331165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605214331165</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="rest-demo and rest-demo-jsclient commited" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest-demo and rest-demo-jsclient commited" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="243" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605197972363">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
     <state x="588" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1707.920@0.0.1707.920" timestamp="1605197972363" />
+    <state x="352" y="0" key="CommitChangelistDialog2" timestamp="1605214328441">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="352" y="0" key="CommitChangelistDialog2/0.0.1707.920@0.0.1707.920" timestamp="1605214328441" />
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2" timestamp="1605214332850">
+      <screen x="0" y="0" width="1707" height="920" />
+    </state>
+    <state x="346" y="128" key="Vcs.Push.Dialog.v2/0.0.1707.920@0.0.1707.920" timestamp="1605214332850" />
     <state x="441" y="42" key="new project wizard" timestamp="1605202506536">
       <screen x="0" y="0" width="1707" height="920" />
     </state>

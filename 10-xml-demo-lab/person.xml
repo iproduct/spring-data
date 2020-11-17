@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<person id="1" xmlns="http://iproduct.org/course/springdata/xmldemo/model">
+    <firstName>Petar</firstName>
+    <lastName>Petrov</lastName>
+    <address id="1">
+        <country>Bulgaria</country>
+        <city>Sofia</city>
+        <street>bul. Tzar Osvoboditel, 50</street>
+    </address>
+    <phoneNumbers>
+        <phone id="2">
+            <number>+359 2 9731425</number>
+        </phone>
+        <phone id="1">
+            <number>+359 885 123456</number>
+        </phone>
+    </phoneNumbers>
+</person>
