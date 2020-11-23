@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<header>
+    <th:block th:include="~{fragments/nav-bar}"></th:block>
+</header>
+<main>
+    <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image-home"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-3">
+                <div class="container">
+                    <h1 class="text-black display-3">Welcome to Next Level Technologies.</h1>
+                    <hr class="bg-dark hr-2"/>
+                    <h1 class="text-black display-4"><a class="text-black" th:href="@{/users/login}">Login</a> if you
+                        have an
+                        account.</h1>
+                    <h1 class="text-black display-4"><a class="text-black" th:href="@{/users/register}">Register</a> if
+                        you
+                        don't.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <th:block th:include="~{fragments/footer}"></th:block>
+</footer>
+</body>
+</html>

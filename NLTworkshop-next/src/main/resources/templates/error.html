@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<header>
+    <th:block th:include="~{fragments/nav-bar}"></th:block>
+    <style>
+        table td{
+            vertical-align:top;
+            border:solid 1px #888;
+            padding:10px;
+            color: red;
+        }
+        h2 {
+            color: red;
+        }
+    </style>
+</header>
+<main>
+    <div class="jumbotron">
+
+        <span style="visibility: hidden">....</span>
+        <h1 class="text-black display-3 mt-5 display-3">
+            Welcome to Next Level Technologies web site.
+            Here you can find information about our projects
+        </h1>
+
+        <table th:if="${errors == null}">
+            <tr>
+                <td>Date</td>
+                <td th:text="${timestamp}"/>
+        </tr>
+        <tr>
+            <td>Path</td>
+            <td th:text="${path}"/>
+        </tr>
+        <tr>
+            <td>Error</td>
+            <td th:text="${error}"/>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td th:text="${status}"/>
+        </tr>
+        <tr>
+            <td>Message</td>
+            <td th:text="${message}"/>
+        </tr>
+        <!--            <tr>-->
+        <!--                <td>Exception</td>-->
+        <!--                <td th:text="${exception}"/>-->
+        <!--            </tr>-->
+        <!--            <tr>-->
+        <!--                <td>Trace</td>-->
+        <!--                <td>-->
+        <!--                    <pre th:text="${trace}"/>-->
+        <!--                </td>-->
+        <!--            </tr>-->
+        </table>
+
+        <ul th:if="${errors != null && errors.size() > 0}" class="alert alert-danger" role="alert" >
+            <li th:each="error: ${errors}">
+                <td th:text="${error}" />
+            </li>
+        </ul>
+
+        <a class="btn btn-primary mx-5 my-5" th:href="@{/home}">Go Home</a>
+    </div>
+</main>
+<footer>
+    <th:block th:include="~{fragments/footer}"></th:block>
+</footer>
+</body>
+</html>

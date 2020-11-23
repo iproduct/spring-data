@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <th:block th:include="~{fragments/head}"></th:block>
+    </head>
+    <body>
+        <header>
+            <th:block th:include="~{fragments/nav-bar}"></th:block>
+        </header>
+        <main>
+            <div class="jumbotron">
+
+                <span style="visibility: hidden">....</span>
+
+                <form th:action="@{/import/companies}" method="post">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <label class="display-4" for="items-textarea">Companies:</label>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div class="col-md-8 d-flex justify-content-center">
+                            <textarea class="form-control" id="items-textarea" rows="9" th:text="${companies}" name="companies" readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <button class="btn bg-black mx-5 my-5">Import Companies</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <th:block th:include="~{fragments/footer}"></th:block>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projects>
+    <project>
+        <name>HealthCare</name>
+        <description>Pharmacy web app</description>
+        <start-date>2017-07-12</start-date>
+        <is-finished>true</is-finished>
+        <payment>10000.00</payment>
+        <company name="Phoenix"/>
+    </project>
+    <project>
+        <name>MMA</name>
+        <description>Mixed martial arts club web site</description>
+        <start-date>2018-09-21</start-date>
+        <is-finished>true</is-finished>
+        <payment>7000.00</payment>
+        <company name="Vallor"/>
+    </project>
+    <project>
+        <name>DJApp</name>
+        <description>Sound system</description>
+        <start-date>2017-08-13</start-date>
+        <is-finished>false</is-finished>
+        <payment>25000.00</payment>
+        <company name="MusicCo"/>
+    </project>
+    <project>
+        <name>Intel</name>
+        <description>Intel new processor</description>
+        <start-date>2016-01-13</start-date>
+        <is-finished>true</is-finished>
+        <payment>1500000.00</payment>
+        <company name="Tech"/>
+    </project>
+    <project>
+        <name>Invest</name>
+        <description>Credit web site</description>
+        <start-date>2019-04-01</start-date>
+        <is-finished>false</is-finished>
+        <payment>15000.00</payment>
+        <company name="FutureInvests"/>
+    </project>
+    <project>
+        <name>Furniture</name>
+        <description>Furniture magazine</description>
+        <start-date>2015-10-21</start-date>
+        <is-finished>true</is-finished>
+        <payment>30000.00</payment>
+        <company name="DesignGroup"/>
+    </project>
+    <project>
+        <name>Dolby</name>
+        <description>HeadSet sound design</description>
+        <start-date>2018-12-27</start-date>
+        <is-finished>false</is-finished>
+        <payment>2490000.00</payment>
+        <company name="Technologies"/>
+    </project>
+    <project>
+        <name>Robocop</name>
+        <description>AI robots</description>
+        <start-date>2019-05-31</start-date>
+        <is-finished>false</is-finished>
+        <payment>99999.00</payment>
+        <company name="MavenLtd"/>
+    </project>
+    <project>
+        <name>GitBuh_Project</name>
+        <description>GitBuh repositories improvement</description>
+        <start-date>2017-02-05</start-date>
+        <is-finished>true</is-finished>
+        <payment>47899.00</payment>
+        <company name="Gitbuh"/>
+    </project>
+    <project>
+        <name>HoodWars</name>
+        <description>Online fighting game</description>
+        <start-date>2018-06-11</start-date>
+        <is-finished>true</is-finished>
+        <payment>650000.00</payment>
+        <company name="Vallor"/>
+    </project>
+    <project>
+        <name>AMD</name>
+        <description>Graphic card</description>
+        <start-date>2015-09-16</start-date>
+        <is-finished>true</is-finished>
+        <payment>5689900.00</payment>
+        <company name="Tech"/>
+    </project>
+    <project>
+        <name>Apocalypse</name>
+        <description>Zombie antidote</description>
+        <start-date>2012-12-12</start-date>
+        <is-finished>false</is-finished>
+        <payment>89000000.00</payment>
+        <company name="Phoenix"/>
+    </project>
+</projects>

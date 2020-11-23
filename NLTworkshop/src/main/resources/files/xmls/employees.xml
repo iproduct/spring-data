@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employee>
+        <first-name>Stamat</first-name>
+        <last-name>Petrov</last-name>
+        <age>45</age>
+        <project>
+            <name>HealthCare</name>
+            <description>Pharmacy web app</description>
+            <start-date>2017-07-12</start-date>
+            <is-finished>true</is-finished>
+            <payment>10000.00</payment>
+            <company name="Phoenix"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Alex</first-name>
+        <last-name>Rusev</last-name>
+        <age>21</age>
+        <project>
+            <name>MMA</name>
+            <description>Mixed martial arts club web site</description>
+            <start-date>2018-09-21</start-date>
+            <is-finished>true</is-finished>
+            <payment>7000.00</payment>
+            <company name="Vallor"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Petar</first-name>
+        <last-name>Georgiev</last-name>
+        <age>24</age>
+        <project>
+            <name>DJApp</name>
+            <description>Sound system</description>
+            <start-date>2017-08-13</start-date>
+            <is-finished>false</is-finished>
+            <payment>25000.00</payment>
+            <company name="MusicCo"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Maria</first-name>
+        <last-name>Hristova</last-name>
+        <age>28</age>
+        <project>
+            <name>Intel</name>
+            <description>Intel new processor</description>
+            <start-date>2016-01-13</start-date>
+            <is-finished>true</is-finished>
+            <payment>1500000.00</payment>
+            <company name="Tech"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Ivan</first-name>
+        <last-name>Todorov</last-name>
+        <age>31</age>
+        <project>
+            <name>Invest</name>
+            <description>Credit web site</description>
+            <start-date>2019-04-01</start-date>
+            <is-finished>false</is-finished>
+            <payment>15000.00</payment>
+            <company name="FutureInvests"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Todor</first-name>
+        <last-name>Angelov</last-name>
+        <age>19</age>
+        <project>
+            <name>Furniture</name>
+            <description>Furniture magazine</description>
+            <start-date>2015-10-21</start-date>
+            <is-finished>true</is-finished>
+            <payment>30000.00</payment>
+            <company name="DesignGroup"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Ivan</first-name>
+        <last-name>Minkov</last-name>
+        <age>47</age>
+        <project>
+            <name>Dolby</name>
+            <description>HeadSet sound design</description>
+            <start-date>2018-12-27</start-date>
+            <is-finished>false</is-finished>
+            <payment>2490000.00</payment>
+            <company name="Technologies"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Mihail</first-name>
+        <last-name>Spasov</last-name>
+        <age>49</age>
+        <project>
+            <name>Robocop</name>
+            <description>AI robots</description>
+            <start-date>2019-05-31</start-date>
+            <is-finished>false</is-finished>
+            <payment>99999.00</payment>
+            <company name="MavenLtd"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Dobromir</first-name>
+        <last-name>Blagoev</last-name>
+        <age>51</age>
+        <project>
+            <name>HoodWars</name>
+            <description>Online fighting game</description>
+            <start-date>2018-06-11</start-date>
+            <is-finished>true</is-finished>
+            <payment>650000.00</payment>
+            <company name="Vallor"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Daniel</first-name>
+        <last-name>Zvezdev</last-name>
+        <age>34</age>
+        <project>
+            <name>GitBuh_Project</name>
+            <description>GitBuh repositories improvement</description>
+            <start-date>2017-02-05</start-date>
+            <is-finished>true</is-finished>
+            <payment>47899.00</payment>
+            <company name="Gitbuh"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Spas</first-name>
+        <last-name>Spasov</last-name>
+        <age>32</age>
+        <project>
+            <name>GitBuh_Project</name>
+            <description>GitBuh repositories improvement</description>
+            <start-date>2017-02-05</start-date>
+            <is-finished>true</is-finished>
+            <payment>47899.00</payment>
+            <company name="Gitbuh"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Hristo</first-name>
+        <last-name>Mytafchiev</last-name>
+        <age>28</age>
+        <project>
+            <name>HealthCare</name>
+            <description>Pharmacy web app</description>
+            <start-date>2017-07-12</start-date>
+            <is-finished>true</is-finished>
+            <payment>10000.00</payment>
+            <company name="Phoenix"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Kalina</first-name>
+        <last-name>Stoyanova</last-name>
+        <age>29</age>
+        <project>
+            <name>GitBuh_Project</name>
+            <description>GitBuh repositories improvement</description>
+            <start-date>2017-02-05</start-date>
+            <is-finished>true</is-finished>
+            <payment>47899.00</payment>
+            <company name="Gitbuh"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Eli</first-name>
+        <last-name>Ivanova</last-name>
+        <age>24</age>
+        <project>
+            <name>Robocop</name>
+            <description>AI robots</description>
+            <start-date>2019-05-31</start-date>
+            <is-finished>false</is-finished>
+            <payment>99999.00</payment>
+            <company name="MavenLtd"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Stoyanka</first-name>
+        <last-name>Zlatova</last-name>
+        <age>25</age>
+        <project>
+            <name>Dolby</name>
+            <description>HeadSet sound design</description>
+            <start-date>2018-12-27</start-date>
+            <is-finished>false</is-finished>
+            <payment>2490000.00</payment>
+            <company name="Technologies"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Emo</first-name>
+        <last-name>Popov</last-name>
+        <age>26</age>
+        <project>
+            <name>Invest</name>
+            <description>Credit web site</description>
+            <start-date>2019-04-01</start-date>
+            <is-finished>false</is-finished>
+            <payment>15000.00</payment>
+            <company name="FutureInvests"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Borika</first-name>
+        <last-name>Nikolova</last-name>
+        <age>27</age>
+        <project>
+            <name>Furniture</name>
+            <description>Furniture magazine</description>
+            <start-date>2015-10-21</start-date>
+            <is-finished>true</is-finished>
+            <payment>30000.00</payment>
+            <company name="DesignGroup"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Ceco</first-name>
+        <last-name>Stanoev</last-name>
+        <age>31</age>
+        <project>
+            <name>Intel</name>
+            <description>Intel new processor</description>
+            <start-date>2016-01-13</start-date>
+            <is-finished>true</is-finished>
+            <payment>1500000.00</payment>
+            <company name="Tech"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Anna</first-name>
+        <last-name>Valerieva</last-name>
+        <age>32</age>
+        <project>
+            <name>DJApp</name>
+            <description>Sound system</description>
+            <start-date>2017-08-13</start-date>
+            <is-finished>false</is-finished>
+            <payment>25000.00</payment>
+            <company name="MusicCo"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Nikolay</first-name>
+        <last-name>Mitrev</last-name>
+        <age>34</age>
+        <project>
+            <name>MMA</name>
+            <description>Mixed martial arts club web site</description>
+            <start-date>2018-09-21</start-date>
+            <is-finished>true</is-finished>
+            <payment>7000.00</payment>
+            <company name="Vallor"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Grigor</first-name>
+        <last-name>Vasev</last-name>
+        <age>32</age>
+        <project>
+            <name>MMA</name>
+            <description>Mixed martial arts club web site</description>
+            <start-date>2018-09-21</start-date>
+            <is-finished>true</is-finished>
+            <payment>7000.00</payment>
+            <company name="Vallor"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Mihail</first-name>
+        <last-name>Todorov</last-name>
+        <age>18</age>
+        <project>
+            <name>DJApp</name>
+            <description>Sound system</description>
+            <start-date>2017-08-13</start-date>
+            <is-finished>false</is-finished>
+            <payment>25000.00</payment>
+            <company name="MusicCo"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Boris</first-name>
+        <last-name>Borisov</last-name>
+        <age>19</age>
+        <project>
+            <name>Dolby</name>
+            <description>HeadSet sound design</description>
+            <start-date>2018-12-27</start-date>
+            <is-finished>false</is-finished>
+            <payment>2490000.00</payment>
+            <company name="Technologies"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Angel</first-name>
+        <last-name>Deyanov</last-name>
+        <age>19</age>
+        <project>
+            <name>Robocop</name>
+            <description>AI robots</description>
+            <start-date>2019-05-31</start-date>
+            <is-finished>false</is-finished>
+            <payment>99999.00</payment>
+            <company name="MavenLtd"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Lora</first-name>
+        <last-name>Todorova</last-name>
+        <age>16</age>
+        <project>
+            <name>GitBuh_Project</name>
+            <description>GitBuh repositories improvement</description>
+            <start-date>2017-02-05</start-date>
+            <is-finished>true</is-finished>
+            <payment>47899.00</payment>
+            <company name="Gitbuh"/>
+        </project>
+    </employee>
+    <employee>
+        <first-name>Milica</first-name>
+        <last-name>Hristova</last-name>
+        <age>21</age>
+        <project>
+            <name>HoodWars</name>
+            <description>Online fighting game</description>
+            <start-date>2018-06-11</start-date>
+            <is-finished>true</is-finished>
+            <payment>650000.00</payment>
+            <company name="Vallor"/>
+        </project>
+    </employee>
+</employees>

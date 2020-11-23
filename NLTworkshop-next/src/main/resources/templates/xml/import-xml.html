@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <th:block th:include="~{fragments/head}"></th:block>
+    </head>
+    <body>
+        <header>
+            <th:block th:include="~{fragments/nav-bar}"></th:block>
+        </header>
+        <main>
+            <div class="jumbotron jumbotron-background d-flex justify-content-center">
+                <div class="container">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <h1 class="display-3">Import XML</h1>
+                    </div>
+                    <hr class="hr-background" />
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <h4 class="display-4">Click the buttons below to import XML.</h4>
+                    </div>
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <th:block th:if="${areImported[0] == false}">
+                            <a class="btn bg-black glow-button mx-5 my-5"th:href="@{/import/companies}">Import Companies</a>
+                        </th:block>
+                        <th:block th:if="${areImported[1] == false}">
+                            <a class="btn bg-black glow-button mx-5 my-5"th:href="@{/import/projects}">Import Projects</a>
+                        </th:block>
+                        <th:block th:if="${areImported[2] == false}">
+                            <a class="btn bg-black glow-button mx-5 my-5"th:href="@{/import/employees}">Import Employees</a>
+                        </th:block>
+                        <th:block th:if="${areImported[0] == true && areImported[1] == true && areImported[2] == true}">
+                            <p class="display-4">All XML files are imported.</p>
+                        </th:block>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <th:block th:include="~{fragments/footer}"></th:block>
+        </footer>
+    </body>
+</html>
