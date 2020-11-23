@@ -7,6 +7,7 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.io.StringWriter;
 
 public class XmlParserImpl implements XmlParser {
     @Override
@@ -31,5 +32,20 @@ public class XmlParserImpl implements XmlParser {
         } catch (JAXBException ex) {
             throw new CustomXmlException(ex.getMessage(), ex);
         }
+    }
+
+    @Override
+    public <O> String exportXml(O object, Class<O> objectClass) {
+        try {
+            JAXBContext context = JAXBContext.newInstance(objectClass);
+            Marshaller marshaller = context.createMarshaller();
+            StringWriter sw = new StringWriter();
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            marshaller.marshal(object, sw);
+            return sw.toString();
+        } catch (JAXBException ex) {
+            throw new CustomXmlException(ex.getMessage(), ex);
+        }
+
     }
 }

@@ -1,5 +1,10 @@
 package softuni.workshop.service.services;
 
+import softuni.workshop.data.entities.Project;
+import softuni.workshop.service.dtos.ProjectDto;
+
+import java.util.List;
+
 public interface ProjectService {
 
     void importProjects();
@@ -8,5 +13,8 @@ public interface ProjectService {
 
     String readProjectsXmlFile();
 
-    String exportFinishedProjects();
+    String exportFinishedProjectsXml();
+    String exportFinishedProjectsText();
+
+    List<ProjectDto> getFinishedProjects();
 }

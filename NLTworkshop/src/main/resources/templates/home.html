@@ -19,8 +19,10 @@
         </h1>
 
         <th:block th:if="${areImported == true}">
-            <a class="btn btn-success mx-5 my-5"th:href="@{/export/project-if-finished}">Export finished projects</a>
-            <a class="btn btn-success mx-5 my-5"th:href="@{/export/employees-above}">Export employees with age above 25</a>
+            <a class="btn btn-success mx-5 my-5"th:href="@{/export/projects-if-finished}">Export finished projects as text</a>
+            <a class="btn btn-success mx-5 my-5"th:href="@{/export/projects-if-finished-xml}">Export finished projects to XML</a>
+            <a class="btn btn-success mx-5 my-5"th:href="@{/export/employees-above}">Export employees with age above 25 as text</a>
+            <a class="btn btn-success mx-5 my-5"th:href="@{/export/employees-above-xml}">Export employees with age above 25 to XML</a>
         </th:block>
         <th:block th:if="${areImported == false}">
             <p class="display-4">Import the xml files first.</p>

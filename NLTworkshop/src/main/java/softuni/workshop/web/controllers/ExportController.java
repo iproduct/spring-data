@@ -20,10 +20,27 @@ public class ExportController extends BaseController {
         this.employeeService = employeeService;
     }
 
+    @GetMapping("/projects-if-finished-xml")
+    public ModelAndView getAllFinishedProjectsXml() {
+        return new ModelAndView("export/export-projects-if-finished","projectsIfFinished",
+                projectService.exportFinishedProjectsXml());
+    }
+
     @GetMapping("/projects-if-finished")
     public ModelAndView getAllFinishedProjects() {
-        return new ModelAndView("export-projects-if-finished","projectsIfFinished",
-                projectService.exportFinishedProjects());
+        return new ModelAndView("export/export-projects-if-finished","projectsIfFinished",
+                projectService.exportFinishedProjectsText());
+    }
 
+    @GetMapping("/employees-above-xml")
+    public ModelAndView getEmployeesAgeAbove25Xml() {
+        return new ModelAndView("export/export-employees-with-age","employeesAbove",
+                employeeService.exportEmployeesWithAgeAboveXml(25));
+    }
+
+    @GetMapping("/employees-above")
+    public ModelAndView getEmployeesAgeAbove25Text() {
+        return new ModelAndView("export/export-employees-with-age","employeesAbove",
+                employeeService.exportEmployeesWithAgeAboveText(25));
     }
 }
