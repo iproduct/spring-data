@@ -48,7 +48,7 @@ public class ImportController extends BaseController {
     public ModelAndView companiesConfirm() throws JAXBException {
         this.companyService.importCompanies();
 
-        return super.redirect("/import/xml");
+        return super.redirect(areAllImported()? "/home" : "/import/xml");
     }
 
     @GetMapping("/projects")
@@ -62,9 +62,9 @@ public class ImportController extends BaseController {
     public ModelAndView projectsConfirm() throws JAXBException {
         this.projectService.importProjects();
 
-        return super.redirect("/import/xml");
+        return super.redirect(areAllImported()? "/home" : "/import/xml");
     }
-    
+
     @GetMapping("/employees")
     public ModelAndView employees() throws IOException {
         ModelAndView modelAndView = super.view("xml/import-employees");
@@ -76,6 +76,13 @@ public class ImportController extends BaseController {
     public ModelAndView employeesConfirm() throws JAXBException {
         this.employeeService.importEmployees();
 
-        return super.redirect("/import/xml");
+        return super.redirect(areAllImported()? "/home" : "/import/xml");
+    }
+
+    // utility methods
+    private boolean areAllImported() {
+        return this.companyService.areImported() &&
+                this.projectService.areImported() &&
+                this.employeeService.areImported();
     }
 }
