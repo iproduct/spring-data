@@ -1,4 +1,4 @@
-package softuni.workshop.error;
+package softuni.workshop.exceptions;
 
 public class Constants {
 
