@@ -50,4 +50,32 @@ public class ImportController extends BaseController {
 
         return super.redirect("/import/xml");
     }
+
+    @GetMapping("/projects")
+    public ModelAndView projects() throws IOException {
+        ModelAndView modelAndView = super.view("xml/import-projects");
+        modelAndView.addObject("projects", this.projectService.readProjectsXmlFile());
+        return modelAndView;
+    }
+
+    @PostMapping("/projects")
+    public ModelAndView projectsConfirm() throws JAXBException {
+        this.projectService.importProjects();
+
+        return super.redirect("/import/xml");
+    }
+    
+    @GetMapping("/employees")
+    public ModelAndView employees() throws IOException {
+        ModelAndView modelAndView = super.view("xml/import-employees");
+        modelAndView.addObject("employees", this.employeeService.readEmployeesXmlFile());
+        return modelAndView;
+    }
+
+    @PostMapping("/employees")
+    public ModelAndView employeesConfirm() throws JAXBException {
+        this.employeeService.importEmployees();
+
+        return super.redirect("/import/xml");
+    }
 }
