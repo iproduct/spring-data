@@ -12,7 +12,7 @@
     <properties>
         <maven.compiler.source>12</maven.compiler.source>
         <maven.compiler.target>12</maven.compiler.target>
-        <hibernate.version>5.4.12.Final</hibernate.version>
+        <hibernate.version>5.4.24.Final</hibernate.version>
         <mysql.version>8.0.19</mysql.version>
         <jaxb.version>2.2.11</jaxb.version>
     </properties>
